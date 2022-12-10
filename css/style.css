@@ -32,6 +32,7 @@ body {
 }
 
 .menu-list {
+    display: flex;
     list-style-type: none;
     margin-right: 30px;
 }
