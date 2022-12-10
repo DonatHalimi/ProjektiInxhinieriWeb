@@ -6,11 +6,33 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.navbar{
-    margin-left:30px;
+.navbar {
+    margin-left: 30px;
     margin-bottom: 40px;
     font-size: 22px;
     font-weight: 800;
     color: red;
     background-color: black;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-right: 50px;
+    height: 100%;
+    font-family: "Sen", sans-serif;
+}
+.logo-container{
+    flex: 1;
+}
+
+.menu{
+    flex: 5;
+}
+
+.menu-list {
+    list-style-type: none;
+    margin-right: 30px;
+    padding-right: 100;
 }
