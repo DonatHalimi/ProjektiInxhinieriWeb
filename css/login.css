@@ -2,4 +2,23 @@
     width: 400px;
     border-radius: 30px;
     margin: 150px auto;
+    height: 300px;
 }
+#email{
+    background-color: rgb(235, 240, 252);
+    border-color: #ebf0fc;
+    color: gray;
+}
+
+#password{
+    background-color: rgb(235, 240, 252);
+    border-color: #ebf0fc;
+    color: gray;
+}
+#button{
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0px 55px;
+}
+
+
