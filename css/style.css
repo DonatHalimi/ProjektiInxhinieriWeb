@@ -23,13 +23,6 @@ body {
     height: 100%;
     font-family: "Sen", sans-serif;
 }
-.logo-container{
-    flex: 1;
-}
-
-.menu-container{
-    flex: 5;
-}
 
 .menu {
     display: flex;
@@ -37,6 +30,6 @@ body {
     margin-right: 30px;
 }
 
-.menu-list{
+.menu-list {
     margin: 30px;
 }
