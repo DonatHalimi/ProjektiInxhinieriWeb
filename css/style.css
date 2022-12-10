@@ -42,7 +42,7 @@ body {
 }
 
 .menu-container{
-
+    flex: 6;
 }
 
 .menu-list{
