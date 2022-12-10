@@ -27,12 +27,16 @@ body {
     flex: 1;
 }
 
-.menu{
+.menu-container{
     flex: 5;
 }
 
-.menu-list {
+.menu {
     display: flex;
     list-style-type: none;
     margin-right: 30px;
+}
+
+.menu-list{
+    margin: 30px;
 }
