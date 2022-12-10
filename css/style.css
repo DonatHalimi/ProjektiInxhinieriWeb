@@ -15,21 +15,41 @@ body {
     background-color: black;
 }
 
-/* .navbar-container {
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-container {
     display: flex;
     align-items: center;
-    padding-top: 0;
-    padding-right: 50px;
+    padding: 0 50px;
     height: 100%;
+    color: white;
     font-family: "Sen", sans-serif;
 }
 
-.menu {
-    display: flex;
-    list-style-type: none;
-    margin-right: 30px;
+.logo-container {
+    flex: 1;
 }
 
-.menu-list {
-    margin: 30px;
-} */
+.logo{
+    font-size: 30px;
+    color: red;
+}
+
+.menu-container{
+
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-item{
+    margin-right: 20px;
+}
