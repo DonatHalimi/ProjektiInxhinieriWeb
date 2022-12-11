@@ -17,6 +17,6 @@ function validoInput() {
     }
 }
 
-function validoInputSignup(){
-    
+function validoInputSignup() {
+
 }
