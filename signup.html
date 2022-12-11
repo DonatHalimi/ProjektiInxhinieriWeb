@@ -15,21 +15,21 @@
         <h1><b>Regjistrohu</b></h1>
         <form>
             <label><b>Emri</b></label>
-            <input type="text" placeholder="Shkruani emrin" required>
+            <input id="emri" type="text" placeholder="Shkruani emrin" required>
             <label><b>Mbiemri</b></label>
 
-            <input type="text" placeholder="Shkruani mbiemrin" required>
+            <input id="mbiemri"type="text" placeholder="Shkruani mbiemrin" required>
             <label><b>Email</b></label>
 
-            <input type="email" placeholder="Shkruani email" required>
+            <input id="emailS" type="email" placeholder="Shkruani email" required>
             <label><b>Password</b></label>
 
-            <input type="password" placeholder="Shkruani passwordin" required>
+            <input id="passwordS" type="password" placeholder="Shkruani passwordin" required>
             <label><b>Konfirmo Password</b></label>
-            <input type="password" placeholder="Konfirmoni passwordin" required>
+            <input id="passwordK" type="password" placeholder="Konfirmoni passwordin" required>
 
             <br>
-            <input type="submit" id="button" class="btn btn-primary deep-purple btn-block " value="Dergo">
+            <input type="submit" id="button" onclick="validoInputSignup()" class="btn btn-primary deep-purple btn-block " value="Dergo">
 
         </form>
         <p id="parag1">Keni llogari?<a href="login.html">Kycuni ketu</a></p>

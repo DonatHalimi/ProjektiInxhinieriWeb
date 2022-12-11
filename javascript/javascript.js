@@ -18,5 +18,34 @@ function validoInput() {
 }
 
 function validoInputSignup(){
-    
+    var emriUserit = document.getElementById('emri').value;
+    var mbiemrilUserit = document.getElementById('mbiemri').value;
+    var emailUseritS = document.getElementById('emailS').value;
+    var passUseritS = document.getElementById('passwordS').value;
+    var passKUseritS = document.getElementById('passwordK').value;
+
+    if (emriUserit == "" && mbiemrilUserit == "" && emailUseritS == "" && passUseritS == "" && passKUseritS == ""){
+        alert("Duhet te plotesoni te dhenat");
+    }else if(emriUserit == ""){
+        alert("Duhet te shenoni emrin");
+    }else if(mbiemrilUserit == "" ){
+        alert("Duhet te shenoni mbiemrin");
+    }else if (emailUseritS == "") {
+        alert("Duhet te shenosh email!");
+    }else if(passUseritS == ""){
+        alert("Duhet te shenoni passwordin");
+    }else if(passKUseritS == ""){
+        alert("Duhet ta konfirmoni passwordin");
+    }else if(passUseritS.length<8){
+        alert("Password-i duhet ti kete se paku 8 karaktere");
+    }else if(passUseritS.search(/[A-Z]/)<0){
+        alert("Password-i duhet te kete shkronje te madhe");
+    }
+    else if(passUseritS != passKUseritS){
+        alert("Password-et nuk perputhen")
+    }else{
+        alert("U regjistruat me sukses");
+    }
+
+
 }
