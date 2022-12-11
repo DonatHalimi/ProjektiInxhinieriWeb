@@ -16,3 +16,7 @@ function validoInput() {
         alert("Ju keni hyre me sukses!");
     }
 }
+
+function validoInputSignup(){
+    
+}
