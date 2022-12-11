@@ -11,6 +11,8 @@ body{
     margin: auto;
     background-color:coral;
     border-radius: 3px;
+    margin: 150px auto;
+    border-radius: 30px;
 }
 h1{
     text-align: center;
@@ -36,5 +38,6 @@ form input{
     margin-top: 10px;
 }
 #parag1{
-    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
 }
