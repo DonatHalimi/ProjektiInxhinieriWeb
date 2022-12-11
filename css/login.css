@@ -10,7 +10,7 @@ body {
     width: 400px;
     border-radius: 30px;
     margin: 150px auto;
-    height: 300px;
+    height: 350px;
     background-color: white
 }
 
@@ -26,6 +26,3 @@ body {
     color: gray;
 }
 
-#button {
-    border-radius: 30px;
-}
