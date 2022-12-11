@@ -49,3 +49,7 @@ body {
 .menu-list-item {
     margin-right: 50px;
 }
+
+.featured-content{
+    background-color: red;
+}
