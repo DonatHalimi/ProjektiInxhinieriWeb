@@ -60,6 +60,8 @@ body {
     margin-top: 100px;
     padding-left: 30px;
     height: 300px;
+
     float: left;
     object-fit: cover;
 }
+
