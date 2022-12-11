@@ -49,6 +49,11 @@ body {
     margin-right: 50px;
 }
 
+.text {
+    position: relative;
+    margin-top: 305px;
+}
+
 #login-a {
     margin-left: 500px;
 }
