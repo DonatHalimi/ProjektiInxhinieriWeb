@@ -73,3 +73,15 @@ body {
     float: left;
     object-fit: cover;
 }
+
+.moviie-list-item-desc {
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+}
