@@ -49,3 +49,7 @@ body {
 .menu-list-item {
     margin-right: 50px;
 }
+
+.movie-list {
+    display: flex;
+}
