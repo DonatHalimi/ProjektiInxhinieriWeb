@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Sign up</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -8,27 +9,33 @@
 
     <link rel="stylesheet" href="css/signup.css">
 </head>
+
 <body>
     <div class="signup-box">
-    <h1>Regjistrohuni</h1>
-    <form>
-        <label>Emri</label>
-        <input type="text" placeholder="">
-        <label>Mbiemri</label>
-        <input type="text" placeholder="">
-        <label>Email</label>
-        <input type="email" placeholder="">
-        <label>Passwordi</label>
-        <input type="password" placeholder="">
-        <label>Konfirmoni passwordin</label>
-        <input type="password" placeholder="">
-        <br>
-        <input type="submit" id="button" class="btn btn-primary deep-purple btn-block " value="Dergo">
+        <h1>Regjistrohuni</h1>
+        <form>
+            <label><b>Emri</b></label>
+            <input type="text" placeholder="Shkruani emrin" required>
+            <label><b>Mbiemri</b></label>
 
-    </form>
-    <p id="parag1">Keni llogari?<a href="login.html">Kycuni ketu</a></p>
+            <input type="text" placeholder="Shkruani mbiemrin" required>
+            <label><b>Email</b></label>
+
+            <input type="email" placeholder="Shkruani email" required>
+            <label><b>Password</b></label>
+
+            <input type="password" placeholder="Shkruani passwordin" required>
+            <label><b>Konfirmo Password</b></label>
+            <input type="password" placeholder="Konfirmoni passwordin" required>
+
+            <br>
+            <input type="submit" id="button" class="btn btn-primary deep-purple btn-block " value="Dergo">
+
+        </form>
+        <p id="parag1">Keni llogari?<a href="login.html">Kycuni ketu</a></p>
     </div>
 
-    
+    <script src="javascript/javascript.js"></script>
 </body>
+
 </html>
