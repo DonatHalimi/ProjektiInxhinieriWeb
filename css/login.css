@@ -1,32 +1,39 @@
-body{
-background-image: url('../img/kinemaja.jpg');
-background-size:cover;
-background-repeat: no-repeat;
-background-position: center;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-#login-card{
+
+body {
+    background-image: url('../img/kinemaja.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#login-card {
     width: 400px;
     border-radius: 30px;
     margin: 150px auto;
     height: 300px;
-    background-color:crimson;
+    background-color: crimson;
 }
-#email{
+
+#email {
     background-color: rgb(235, 240, 252);
     border-color: #ebf0fc;
     color: gray;
 }
 
-#password{
+#password {
     background-color: rgb(235, 240, 252);
     border-color: #ebf0fc;
     color: gray;
 }
-#button{
+
+#button {
     border-radius: 30px;
     padding: 5px;
     margin: 0px 55px;
 }
-
-
