@@ -1,3 +1,6 @@
+body{
+background-image: url('/img/kinemaja.jpg');
+}
 #login-card{
     width: 400px;
     border-radius: 30px;
