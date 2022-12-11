@@ -17,6 +17,7 @@ function validoInput() {
     }
 }
 
+
 function validoInputSignup(){
     var emriUserit = document.getElementById('emri').value;
     var mbiemrilUserit = document.getElementById('mbiemri').value;
@@ -46,6 +47,7 @@ function validoInputSignup(){
     }else{
         alert("U regjistruat me sukses");
     }
+
 
 
 }
