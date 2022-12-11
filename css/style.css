@@ -49,10 +49,11 @@ body {
     margin-right: 50px;
 }
 
-.text {
+.movie-list-description1 {
     position: relative;
     margin-top: 305px;
 }
+
 
 #login-a {
     margin-left: 500px;
@@ -69,7 +70,6 @@ body {
     margin-top: 100px;
     padding-left: 30px;
     height: 300px;
-
     float: left;
     object-fit: cover;
 }
