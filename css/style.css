@@ -63,7 +63,3 @@ body {
     float: left;
     object-fit: cover;
 }
-
-.movie-list-item:hover .movie-list-item-photo {
-    transform: scale(1,1.5);
-}
