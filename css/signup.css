@@ -25,3 +25,16 @@ form label{
     margin-top: 20px;
     font-size: 18px;
 }
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none; 
+    border-radius: 6px;
+    outline: none;
+}
+#button{
+    margin-top: 10px;
+}
+#parag1{
+    padding-left: 10px;
+}
