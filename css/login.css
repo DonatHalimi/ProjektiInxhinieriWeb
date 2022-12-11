@@ -1,5 +1,9 @@
 body{
-background-image: url('/img/kinemaja.jpg');
+background-image: url('../img/kinemaja.jpg');
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+
 }
 #login-card{
     width: 400px;
