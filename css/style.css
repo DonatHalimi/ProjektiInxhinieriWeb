@@ -51,4 +51,19 @@ body {
 
 .movie-list {
     display: flex;
+    align-items: center;
+    float: left;
+}
+
+.movie-list-item {
+    display: flex;
+    margin-top: 100px;
+    padding-left: 30px;
+    height: 300px;
+    float: left;
+    object-fit: cover;
+}
+
+.movie-list-item:hover .movie-list-item-photo {
+    transform: scale(1,1.5);
 }
