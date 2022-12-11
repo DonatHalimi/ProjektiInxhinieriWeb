@@ -1,6 +1,11 @@
-* {
+body {
+    background-image: url('../img/kinemaja.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .rreth-nesh {
     margin-top: 300px;
+    color: white;
 }
