@@ -49,6 +49,10 @@ body {
     margin-right: 50px;
 }
 
+#login-a {
+    margin-left: 500px;
+}
+
 .movie-list {
     display: flex;
     align-items: center;
@@ -64,4 +68,3 @@ body {
     float: left;
     object-fit: cover;
 }
-
