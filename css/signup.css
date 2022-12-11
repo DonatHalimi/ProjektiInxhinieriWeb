@@ -34,9 +34,11 @@ form label {
 form input {
     width: 100%;
     padding: 7px;
-    border: none;
+    border-color: #ebf0fc;
     border-radius: 6px;
     outline: none;
+    background-color: rgb(235, 240, 252);
+
 }
 
 #button {
