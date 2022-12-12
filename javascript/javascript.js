@@ -63,6 +63,21 @@ function validoInputRezervo(){
     var qytet = document.getElementById('qytet').value;
 
 
+    if(dataZ== "" && orari == "" && persona== "" && filmZ== "" && qytet == "" ){
+        alert("Duhet te plotesoni te dhenat!");
+    }else if(dataZ== ""){
+        alert("Duhet te zgjedhni daten");
+    }else if(orari == ""){
+        alert("Duhet te zgjedhni orarin")
+    }else if(persona== ""){
+        alert("Zgjedhni sa persona jeni");
+    }else if(filmZ== ""){
+        alert("Zgjedhni cilin film deshironi ta shikoni")
+    }else if(qytet == ""){
+        alert("Zgjedhni qytetin ku deshironi te rezervoni")
+    }else{
+        alert("Ju rezervuat me sukses")
+    }
 
 
 
