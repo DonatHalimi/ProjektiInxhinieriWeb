@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(209, 93, 93);
 }
 
 
@@ -108,4 +107,23 @@ body {
 }
 #reservation{
     margin-top: 50%;
+}
+
+.reservation form{
+    border: var(red);
+    padding: 32px;
+}
+.reservation form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+}
+.reservation form h3{
+    background-color: crimson;
+    color: darksalmon;
+    font-size: 40px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
 }
