@@ -29,13 +29,14 @@ body {
     flex: 1;
     padding: 0;
     margin: 0;
-    margin-left: -30px;
- 
+    margin-left: -50px;
 }
 
 #logo {
     margin-top: 6px;
     max-width: none;
+    float: top;
+    margin-right: 20px;
     width: 250px;
     height: 150px;
 }
@@ -43,6 +44,7 @@ body {
 .menu-container {
     flex: 6;
     margin-left: -30px;
+    margin-bottom: 35px;
 }
 
 .menu-list {
@@ -72,7 +74,8 @@ body {
 }
 
 #login-a {
-    margin-left: 400px;
+    margin-left: 300px;
+    margin-top: 3px;
 }
 
 .movie-list {
