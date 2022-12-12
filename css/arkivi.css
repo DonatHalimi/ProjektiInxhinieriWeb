@@ -72,19 +72,18 @@ body {
     color: white;
 }
 
-.movie-list {
+.movie-list-item-first-row {
     display: flex;
     align-items: center;
     float: left;
 }
 
-.movie-list-item {
+.movie-list-item-first-row {
     display: flex;
-    margin-top: 100px;
+    margin-top: 70px;
     padding-left: 30px;
     height: 300px;
     float: left;
-    object-fit: cover;
 }
 
 #godfather {
@@ -140,23 +139,7 @@ body {
     float: left;
 }
 
-#knivesout {
-    height: 300px;
-}
-
-#notimetodie {
-    height: 300px;
-}
-
-#homealone {
-    height: 300px;
-}
-
-#pinocchio {
-    height: 300px;
-}
-
-#frozen {
+.movie-list-item-photo{
     height: 300px;
 }
 
