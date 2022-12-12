@@ -86,51 +86,6 @@ body {
     float: left;
 }
 
-#godfather {
-    height: 300px;
-}
-
-#godfathertxt {
-    margin-top: 3px;
-    text-align: center;
-}
-
-#blackpanther {
-    height: 300px;
-}
-
-#blackpanthertxt {
-    margin-top: 3px;
-    text-align: center;
-}
-
-#happydeathday {
-    height: 300px;
-}
-
-#happydeathdaytxt {
-    margin-top: 3px;
-    text-align: center;
-}
-
-#logan {
-    height: 300px;
-}
-
-#logantxt {
-    margin-top: 3px;
-    text-align: center;
-}
-
-#dune {
-    height: 300px;
-}
-
-#dunetxt {
-    margin-top: 3px;
-    text-align: center;
-}
-
 .movie-list-item-second-row {
     display: flex;
     margin-top: 70px;
@@ -139,7 +94,7 @@ body {
     float: left;
 }
 
-.movie-list-item-photo{
+.movie-list-item-photo {
     height: 300px;
 }
 
