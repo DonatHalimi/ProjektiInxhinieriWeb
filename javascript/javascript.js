@@ -54,3 +54,16 @@ function validoInputSignup() {
         alert("Jeni regjistruar me sukses!");
     }
 }
+
+function validoInputRezervo(){
+    var dataZ = document.getElementById('dataZ').value;
+    var orari = document.getElementById('orari').value;
+    var persona = document.getElementById('persona').value;
+    var filmZ = document.getElementById('filmZ').value;
+    var qytet = document.getElementById('qytet').value;
+
+
+
+
+
+}
