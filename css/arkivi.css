@@ -49,6 +49,8 @@ body {
 
 .menu-list-item {
     margin-right: 50px;
+    text-decoration: none;
+    color: white;
 }
 
 .movie-list-description1 {
@@ -72,10 +74,9 @@ body {
     color: white;
 }
 
-.movie-list-item-first-row {
-    display: flex;
-    align-items: center;
-    float: left;
+.linku{
+    text-decoration: none;
+    color: white;
 }
 
 .movie-list-item-first-row {
@@ -87,6 +88,14 @@ body {
 }
 
 .movie-list-item-second-row {
+    display: flex;
+    margin-top: 70px;
+    padding-left: 30px;
+    height: 300px;
+    float: left;
+}
+
+.movie-list-item-third-row {
     display: flex;
     margin-top: 70px;
     padding-left: 30px;

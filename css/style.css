@@ -56,20 +56,13 @@ body {
     margin-top: 305px;
 }
 
-#arkivi-a {
-    text-decoration: none;
-    color: white;
-}
-
-#rrethnesh-a {
+.linku {
     text-decoration: none;
     color: white;
 }
 
 #login-a {
     margin-left: 400px;
-    text-decoration: none;
-    color: white;
 }
 
 .movie-list {
