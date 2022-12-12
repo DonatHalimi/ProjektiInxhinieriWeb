@@ -116,3 +116,8 @@ body {
     margin-top: 3px;
     text-align: center;
 }
+
+.arkivi-pages {
+    position: fixed;
+    bottom: 0;
+}
