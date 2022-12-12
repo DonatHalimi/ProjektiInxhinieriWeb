@@ -58,29 +58,19 @@ body {
     margin-top: 305px;
 }
 
-#arkivi-a {
-    text-decoration: none;
-    color: white;
-}
-
-#rrethnesh-a {
-    text-decoration: none;
-    color: white;
-}
-
 #login-a {
     margin-left: 400px;
-    text-decoration: none;
-    color: white;
 }
 
-.linku{
+.linku {
     text-decoration: none;
     color: white;
 }
 
 .movie-list-item-first-row {
     display: flex;
+    position: relative;
+    left: 30px;
     margin-top: 70px;
     padding-left: 30px;
     height: 300px;
