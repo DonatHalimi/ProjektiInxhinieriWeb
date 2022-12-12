@@ -132,11 +132,35 @@ body {
     text-align: center;
 }
 
-#everywhere {
-    line-height: 1.5em;
-    height: 3em;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 100%;
+.movie-list-item-second-row {
+    display: flex;
+    margin-top: 70px;
+    padding-left: 30px;
+    height: 300px;
+    float: left;
+}
+
+#knivesout {
+    height: 300px;
+}
+
+#notimetodie {
+    height: 300px;
+}
+
+#homealone {
+    height: 300px;
+}
+
+#pinocchio {
+    height: 300px;
+}
+
+#frozen {
+    height: 300px;
+}
+
+.covertxt {
+    margin-top: 3px;
+    text-align: center;
 }
