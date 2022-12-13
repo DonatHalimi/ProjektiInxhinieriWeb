@@ -72,6 +72,12 @@ body {
     height: 400px;
 }
 
+.movie-list {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+}
+
 #movie-description-batman {
     font-family: "Sen", sans-serif;
     position: absolute;
@@ -84,10 +90,36 @@ body {
 
 #movie-description-black-adam {
     font-family: "Sen", sans-serif;
-    position: absolute;
-    margin-bottom: 400px;
+    padding-top: 20px;
     left: 300px;
     width: 60%;
     text-align: justify;
-    margin-left: 10px;
+    margin-left: 20px;
+}
+
+.movie-description-nope {
+    font-family: "Sen", sans-serif;
+    padding-top: 20px;
+    left: 300px;
+    width: 60%;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.movie-description-wakanda-forever {
+    font-family: "Sen", sans-serif;
+    padding-top: 20px;
+    left: 300px;
+    width: 60%;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.movie-description-thor {
+    font-family: "Sen", sans-serif;
+    padding-top: 20px;
+    left: 300px;
+    width: 60%;
+    text-align: justify;
+    margin-left: 20px;
 }
