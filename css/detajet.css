@@ -106,7 +106,7 @@ body {
     margin-left: 20px;
 }
 
-.movie-description-wakanda-forever {
+#movie-description-wakanda-forever {
     font-family: "Sen", sans-serif;
     padding-top: 20px;
     left: 300px;
@@ -115,7 +115,7 @@ body {
     margin-left: 20px;
 }
 
-.movie-description-thor {
+#movie-description-thor {
     font-family: "Sen", sans-serif;
     padding-top: 20px;
     left: 300px;
