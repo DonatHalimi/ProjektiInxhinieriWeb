@@ -72,10 +72,20 @@ body {
     height: 400px;
 }
 
-.movie-description {
+#movie-description-batman {
     font-family: "Sen", sans-serif;
     position: absolute;
     top: 110px;
+    left: 300px;
+    width: 60%;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+#movie-description-black-adam {
+    font-family: "Sen", sans-serif;
+    position: absolute;
+    margin-bottom: 400px;
     left: 300px;
     width: 60%;
     text-align: justify;
