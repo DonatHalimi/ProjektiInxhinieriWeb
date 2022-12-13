@@ -1,10 +1,13 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(155, 98, 98);
+    background-image: url('../img/red-cinema.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .navbar {
@@ -94,13 +97,14 @@ body {
 .movie-list-item-photo {
     position: relative;
     left: 20px;
+    border-radius: 15px;
 }
 
 .details {
     position: absolute;
     padding-left: 30px;
     margin-top: 460px;
-
+    text-decoration: white;
 }
 
 #everywhere {
@@ -169,14 +173,17 @@ body {
     color: white;
     width: 95%;
 }
-#qytet{
-    width:100%
+
+#qytet {
+    width: 100%
 }
-#filmZ{
+
+#filmZ {
     width: 100%;
 }
-#orari{
-    width:100%
+
+#orari {
+    width: 100%
 }
 
 .btn {
@@ -187,7 +194,8 @@ body {
     color: white;
     border-color: rgb(155, 98, 98);
 }
-#head2{
+
+#head2 {
     display: flex;
     padding-left: 400px;
     font-size: 50px;

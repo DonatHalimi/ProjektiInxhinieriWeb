@@ -8,11 +8,10 @@ body {
 }
 
 .navbar {
+    position: sticky;
     width: 100%;
     height: 70px;
     background-color: black;
-    position: sticky;
-    top: 0;
 }
 
 .navbar-container {
@@ -64,4 +63,21 @@ body {
 #login-a {
     margin-left: 300px;
     margin-top: 3px;
+}
+
+.movie-list-item-photo {
+    position: sticky;
+    margin-top: 20px;
+    left: 20px;
+    height: 400px;
+}
+
+.movie-description {
+    font-family: "Sen", sans-serif;
+    position: absolute;
+    top: 110px;
+    left: 300px;
+    width: 60%;
+    text-align: justify;
+    margin-left: 10px;
 }

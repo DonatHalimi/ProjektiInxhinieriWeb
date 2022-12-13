@@ -1,7 +1,10 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(155, 98, 98);
+    background-image: url('../img/red-cinema.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 .navbar {
     position: sticky;
@@ -80,4 +83,10 @@ body {
 
 .historiku {
     font-weight: bold;
+    text-align: justify;
+}
+
+.span-class {
+    font-family: "Sen", sans-serif;
+    text-align: justify;
 }

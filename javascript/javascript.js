@@ -46,8 +46,8 @@ function validoInputSignup() {
 
     } else if (passUseritS.search(/[A-Z]/) < 0) {
         alert("Password-i duhet te kete shkronje te madhe!");
-    }
-    else if (passUseritS != passKUseritS) {
+
+    }else if (passUseritS != passKUseritS) {
         alert("Password-et nuk perputhen!")
 
     } else {
@@ -55,7 +55,7 @@ function validoInputSignup() {
     }
 }
 
-function validoInputRezervo(){
+function validoInputRezervo() {
     var dataZ = document.getElementById('dataZ').value;
     var orari = document.getElementById('orari').value;
     var persona = document.getElementById('persona').value;
@@ -63,22 +63,25 @@ function validoInputRezervo(){
     var qytet = document.getElementById('qytet').value;
 
 
-    if(dataZ== "" && orari == "" && persona== "" && filmZ== "" && qytet == "" ){
+    if (dataZ == "" && orari == "" && persona == "" && filmZ == "" && qytet == "") {
         alert("Duhet te plotesoni te dhenat!");
-    }else if(dataZ== ""){
+        
+    } else if (dataZ == "") {
         alert("Duhet te zgjedhni daten");
-    }else if(orari == ""){
-        alert("Duhet te zgjedhni orarin")
-    }else if(persona== ""){
+
+    } else if (orari == "") {
+        alert("Duhet te zgjedhni orarin");
+
+    } else if (persona == "") {
         alert("Zgjedhni sa persona jeni");
-    }else if(filmZ== ""){
-        alert("Zgjedhni cilin film deshironi ta shikoni")
-    }else if(qytet == ""){
-        alert("Zgjedhni qytetin ku deshironi te rezervoni")
-    }else{
+
+    } else if (filmZ == "") {
+        alert("Zgjedhni cilin film deshironi ta shikoni");
+
+    } else if (qytet == "") {
+        alert("Zgjedhni qytetin ku deshironi te rezervoni");
+
+    } else {
         alert("Ju rezervuat me sukses")
     }
-
-
-
 }
