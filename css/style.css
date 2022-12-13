@@ -169,6 +169,15 @@ body {
     color: white;
     width: 95%;
 }
+#qytet{
+    width:100%
+}
+#filmZ{
+    width: 100%;
+}
+#orari{
+    width:100%
+}
 
 .btn {
     width: 100%;
@@ -177,4 +186,10 @@ body {
     margin: 16px 0;
     color: white;
     border-color: rgb(155, 98, 98);
+}
+#head2{
+    display: flex;
+    padding-left: 400px;
+    font-size: 50px;
+    padding-top: 50px;
 }

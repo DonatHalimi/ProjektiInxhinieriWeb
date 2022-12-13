@@ -34,7 +34,8 @@
             </div>
         </div>
     </div>
-
+    <h2 id="head2">Tani ne kinema</h2>
+    <div id="filmat-lista">
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
@@ -79,11 +80,15 @@
             </figure>
         </div>
     </div>
+<<<<<<< HEAD
 
     <div class="details">
         <p>Per me shume detaje kliko <a href="detajet.html">ketu</a></p>
     </div>
 
+=======
+    </div>
+>>>>>>> 2c78e454f5aeb86537af923cc0b3eb26d6860622
     <br>
     <br>
 
@@ -94,11 +99,11 @@
             <div class="flex">
                 <div class="box">
                     <p>Data kur doni ta shikoni</p>
-                    <input type="date" name="data" class="input" required>
+                    <input type="date" name="data" id="dataZ" class="input" required>
                 </div>
                 <div class="box">
                     <p>Ne cfare orari doni ta shikoni?</p>
-                    <select name="ora" class="input" type="time" required>
+                    <select name="ora" class="input" type="time" id="orari" required>
                         <option disabled selected value>Zgjedhni orarin</option>
                         <option value="16:00">16:00</option>
                         <option value="18:30">18:30</option>
@@ -109,7 +114,7 @@
                 </div>
                 <div class="box">
                     <p>Sa persona jeni?</p>
-                    <select name="persona" class="input" required>
+                    <select name="persona" class="input" id="persona" required>
                         <option disabled selected value>Zgjedhni numrin e personave</option>
                         <option value="1">1 Person</option>
                         <option value="2">2 Persona</option>
@@ -120,7 +125,7 @@
                 </div>
                 <div class="box">
                     <p>Cilin film doni ta shikoni?</p>
-                    <select name="filmi" class="input" required>
+                    <select name="filmi" class="input" id="filmZ" required>
                         <option disabled selected value>Zgjedhni nje film</option>
                         <option value="Batman (2022)">Batman (2022)</option>
                         <option value="Black Adam (2022)">Black Adam (2022)</option>
@@ -132,7 +137,7 @@
                 </div>
                 <div class="box">
                     <p>Ne cilen qytet?</p>
-                    <select name="qyteti" class="input" required>
+                    <select name="qyteti" class="input" id="qytet"  required>
                         <option disabled selected value>Zgjedhni nje qytet</option>
                         <option value="Mitrovice">Mitrovice</option>
                         <option value="Prishtine">Prishtine</option>
@@ -141,7 +146,7 @@
                     </select>
                 </div>
             </div>
-            <input type="submit" value="Shikoni a ka vende te lira" name="shikoni" class="btn">
+            <input type="submit" value="Shikoni a ka vende te lira" onclick="validoInputRezervo()" name="shikoni" class="btn">
         </form>
     </section>
     <script src="javascript/javascript.js"></script>
