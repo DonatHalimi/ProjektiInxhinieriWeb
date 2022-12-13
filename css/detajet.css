@@ -97,7 +97,7 @@ body {
     margin-left: 20px;
 }
 
-.movie-description-nope {
+#movie-description-nope {
     font-family: "Sen", sans-serif;
     padding-top: 20px;
     left: 300px;
