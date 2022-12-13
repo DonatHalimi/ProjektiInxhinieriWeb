@@ -4,7 +4,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(155, 98, 98);
+    background-color: black;
+    color: white;
 }
 
 .navbar {
