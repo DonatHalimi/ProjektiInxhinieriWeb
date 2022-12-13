@@ -203,3 +203,11 @@ body {
     font-size: 50px;
     padding-top: 50px;
 }
+
+#kontakt{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    background-color: rgb(41, 192, 104);
+    height: 500px;
+}
