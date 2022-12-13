@@ -208,6 +208,13 @@ body {
     display: flex;
     flex-direction: row;
     padding-left: 15px;
-    background-color: rgb(41, 192, 104);
+    background-color: rgb(0, 0, 0);
     height: 500px;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.textC{
+    font-size: 24px;
+    
 }
