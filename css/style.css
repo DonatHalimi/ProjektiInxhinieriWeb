@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
 }
 
 body {
@@ -31,7 +30,7 @@ body {
     flex: 1;
     padding: 0;
     margin: 0;
-    margin-left: -45px;
+    margin-left: -50px;
 }
 
 #logo {
@@ -45,15 +44,15 @@ body {
 
 .menu-container {
     flex: 6;
-  
+    margin-left: -40px;
     margin-bottom: 35px;
 }
+
 
 .menu-list {
     display: flex;
     list-style: none;
     margin-top: 40px;
-    margin-right: 40px;
 }
 
 .menu-list-item {
@@ -204,7 +203,7 @@ body {
     padding-top: 50px;
 }
 
-#kontakt{
+#kontakt {
     display: flex;
     flex-direction: row;
     padding-left: 15px;
@@ -214,7 +213,7 @@ body {
     font-size: 50px;
 }
 
-.textC{
+.textC {
     font-size: 24px;
-    
+
 }

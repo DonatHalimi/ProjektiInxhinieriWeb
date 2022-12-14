@@ -47,7 +47,7 @@ function validoInputSignup() {
     } else if (passUseritS.search(/[A-Z]/) < 0) {
         alert("Password-i duhet te kete shkronje te madhe!");
 
-    }else if (passUseritS != passKUseritS) {
+    } else if (passUseritS != passKUseritS) {
         alert("Password-et nuk perputhen!")
 
     } else {
@@ -65,7 +65,7 @@ function validoInputRezervo() {
 
     if (dataZ == "" && orari == "" && persona == "" && filmZ == "" && qytet == "") {
         alert("Duhet te plotesoni te dhenat!");
-        
+
     } else if (dataZ == "") {
         alert("Duhet te zgjedhni daten");
 
