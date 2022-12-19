@@ -1,5 +1,7 @@
 function validoInput() {
+    var regexEmail=/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(com|net)$/;
     var emailUserit = document.getElementById('email').value;
+    var regexPassword=/^[A-Z]+[A-Za-z0-9!@#$%^&*()_+=-]{7,}[0-9!@#$%^&*()_+=-]/;
     var passUserit = document.getElementById('password').value;
 
     if (emailUserit == "" && passUserit == "") {
@@ -11,7 +13,8 @@ function validoInput() {
     } else if (passUserit == "") {
         alert("Duhet te shenosh password!");
 
-    } else {
+    }
+     else {
         alert("Ju keni hyre me sukses!");
     }
 }
@@ -84,4 +87,5 @@ function validoInputRezervo() {
     } else {
         alert("Ju rezervuat me sukses")
     }
+}
 }
