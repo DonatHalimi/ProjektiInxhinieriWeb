@@ -53,7 +53,7 @@ function validoInputSignup() {
     } else {
         alert("Jeni regjistruar me sukses!");
     }
-}
+
 
 function validoInputRezervo() {
     var dataZ = document.getElementById('dataZ').value;
