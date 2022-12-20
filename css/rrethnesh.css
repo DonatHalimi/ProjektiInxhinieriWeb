@@ -86,7 +86,11 @@ body {
     text-align: justify;
 }
 
-.span-class {
+.teksti {
+    width: 95%;
+}
+
+.rrethnesh {
     font-family: "Sen", sans-serif;
     text-align: justify;
     padding: 30px;

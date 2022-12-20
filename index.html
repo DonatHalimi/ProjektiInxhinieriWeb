@@ -6,7 +6,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:600,700,900" rel="stylesheet">
 
@@ -20,7 +22,7 @@
     <div class="navbar">
         <div class="navbar-container">
             <div class="logo-container">
-                <img id="logo" src="../img/cinema-paradiso.jpg" alt="">
+                <a href="index.html"><img id="logo" src="../img/cinema-paradiso.jpg" alt=""></a>
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
@@ -36,157 +38,163 @@
     </div>
 
     <h2 id="head2">Tani ne kinema</h2>
-    <div id="filmat-lista">
-        <div class="movie-list">
-            <div class="movie-list-item">
-                <figure>
-                    <a href="detajet.html#movie-description-batman"><img class="movie-list-item-photo"
-                            src="../img/batman-2022.jpg" alt=""></a>
-                    <figcaption class="covertxt">Batman (2022)</figcaption>
-                </figure>
-            </div>
+    <div class="movie-list">
+        <div class="movie-list-item">
+            <figure>
+                <a href="detajet.html#movie-description-batman"><img class="movie-list-item-photo"
+                        src="../img/batman-2022.jpg" alt=""></a>
+                <figcaption class="covertxt">Batman (2022)</figcaption>
+            </figure>
         </div>
+    </div>
 
-        <div class="movie-list">
-            <div class="movie-list-item">
-                <figure>
-                    <a href="detajet.html#movie-description-black-adam"><img class="movie-list-item-photo"
-                            src="../img/black-adam-2022.jpg" alt=""></a>
-                    <figcaption class="covertxt">Black Adam (2022)</figcaption>
-                </figure>
-            </div>
+    <div class="movie-list">
+        <div class="movie-list-item">
+            <figure>
+                <a href="detajet.html#movie-description-black-adam"><img class="movie-list-item-photo"
+                        src="../img/black-adam-2022.jpg" alt=""></a>
+                <figcaption class="covertxt">Black Adam (2022)</figcaption>
+            </figure>
         </div>
+    </div>
 
-        <div class="movie-list">
-            <div class="movie-list-item">
-                <figure>
-                    <a href="detajet.html#movie-description-nope"><img class="movie-list-item-photo"
-                            src="../img/nope-2022.jpg" alt=""></a>
-                    <figcaption class="covertxt">Nope (2022)</figcaption>
-                </figure>
-            </div>
+    <div class="movie-list">
+        <div class="movie-list-item">
+            <figure>
+                <a href="detajet.html#movie-description-nope"><img class="movie-list-item-photo"
+                        src="../img/nope-2022.jpg" alt=""></a>
+                <figcaption class="covertxt">Nope (2022)</figcaption>
+            </figure>
         </div>
+    </div>
 
-        <div class="movie-list">
-            <div class="movie-list-item">
-                <figure>
-                    <a href="detajet.html#movie-description-wakanda-forever"><img class="movie-list-item-photo"
-                            src="../img/wakanda-forever-2022.jpg" alt=""></a>
-                    <figcaption class="covertxt">Wakanda Forever (2022)</figcaption>
-                </figure>
-            </div>
+    <div class="movie-list">
+        <div class="movie-list-item">
+            <figure>
+                <a href="detajet.html#movie-description-wakanda-forever"><img class="movie-list-item-photo"
+                        src="../img/wakanda-forever-2022.jpg" alt=""></a>
+                <figcaption class="covertxt">Wakanda Forever (2022)</figcaption>
+            </figure>
         </div>
+    </div>
 
-        <div class="movie-list">
-            <div class="movie-list-item">
-                <figure>
-                    <a href="detajet.html#movie-description-thor"><img class="movie-list-item-photo"
-                            src="../img/thor-2022.jpg" alt=""></a>
-                    <figcaption class="covertxt">Thor: Love and Thunder (2022)</figcaption>
-                </figure>
-            </div>
+    <div class="movie-list">
+        <div class="movie-list-item">
+            <figure>
+                <a href="detajet.html#movie-description-thor"><img class="movie-list-item-photo"
+                        src="../img/thor-2022.jpg" alt=""></a>
+                <figcaption class="covertxt">Thor: Love and Thunder (2022)</figcaption>
+            </figure>
         </div>
+    </div>
 
-        <br>
-        <br>
+    <br>
+    <br>
 
-        <section class="reservation" id="reservation">
-            <form action="">
-                <h3>Rezervoni</h3>
-                <div class="flex">
-                    <div class="box">
-                        <p>Data kur doni ta shikoni</p>
-                        <input type="date" name="data" id="dataZ" class="input" required>
-                    </div>
-                    <div class="box">
-                        <p>Ne cfare orari doni ta shikoni?</p>
-                        <select name="ora" class="input" type="time" id="orari" required>
-                            <option disabled selected value>Zgjedhni orarin</option>
-                            <option value="16:00">16:00</option>
-                            <option value="18:30">18:30</option>
-                            <option value="19:00">19:00</option>
-                            <option value="20:30">20:30</option>
-                            <option value="22:00">22:00</option>
-                        </select>
-                    </div>
-                    <div class="box">
-                        <p>Sa persona jeni?</p>
-                        <select name="persona" class="input" id="persona" required>
-                            <option disabled selected value>Zgjedhni numrin e personave</option>
-                            <option value="1">1 Person</option>
-                            <option value="2">2 Persona</option>
-                            <option value="3">3 Persona</option>
-                            <option value="4">4 Persona</option>
-                            <option value="5+">Me shume se 5 persona</option>
-                        </select>
-                    </div>
-                    <div class="box">
-                        <p>Cilin film doni ta shikoni?</p>
-                        <select name="filmi" class="input" id="filmZ" required>
-                            <option disabled selected value>Zgjedhni nje film</option>
-                            <option value="Batman (2022)">Batman (2022)</option>
-                            <option value="Black Adam (2022)">Black Adam (2022)</option>
-                            <option value="Nope (2022)">Nope (2022)</option>
-                            <option value="Wakanda Forever(2022)">Wakanda Forever (2022)</option>
-                            <option value="Thor: Love and Thunder (2022)">Thor: Love and Thunder (2022)
-                            </option>
-                        </select>
-                    </div>
-                    <div class="box">
-                        <p>Ne cilin qytet?</p>
-                        <select name="qyteti" class="input" id="qytet" required>
-                            <option disabled selected value>Zgjedhni nje qytet</option>
-                            <option value="Mitrovice">Mitrovice</option>
-                            <option value="Prishtine">Prishtine</option>
-                            <option value="Ferizaj">Ferizaj</option>
-                            <option value="Prizren">Prizren</option>
-                        </select>
-                    </div>
+    <section class="reservation" id="reservation">
+        <form action="">
+            <h3>Rezervoni</h3>
+            <div class="flex">
+                <div class="box">
+                    <p>Data kur doni ta shikoni</p>
+                    <input type="date" name="data" id="dataZ" class="input" required>
                 </div>
-                <input type="submit" value="Shikoni a ka vende te lira" onclick="validoInputRezervo()" name="shikoni"
-                    class="buton">
-            </form>
-        </section>
+                <div class="box">
+                    <p>Ne cfare orari doni ta shikoni?</p>
+                    <select name="ora" class="input" type="time" id="orari" required>
+                        <option disabled selected value>Zgjedhni orarin</option>
+                        <option value="16:00">16:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="22:00">22:00</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Sa persona jeni?</p>
+                    <select name="persona" class="input" id="persona" required>
+                        <option disabled selected value>Zgjedhni numrin e personave</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 Persona</option>
+                        <option value="3">3 Persona</option>
+                        <option value="4">4 Persona</option>
+                        <option value="5+">Me shume se 5 persona</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Cilin film doni ta shikoni?</p>
+                    <select name="filmi" class="input" id="filmZ" required>
+                        <option disabled selected value>Zgjedhni nje film</option>
+                        <option value="Batman (2022)">Batman (2022)</option>
+                        <option value="Black Adam (2022)">Black Adam (2022)</option>
+                        <option value="Nope (2022)">Nope (2022)</option>
+                        <option value="Wakanda Forever(2022)">Wakanda Forever (2022)</option>
+                        <option value="Thor: Love and Thunder (2022)">Thor: Love and Thunder (2022)
+                        </option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Ne cilin qytet?</p>
+                    <select name="qyteti" class="input" id="qytet" required>
+                        <option disabled selected value>Zgjedhni nje qytet</option>
+                        <option value="Mitrovice">Mitrovice</option>
+                        <option value="Prishtine">Prishtine</option>
+                        <option value="Ferizaj">Ferizaj</option>
+                        <option value="Prizren">Prizren</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Shikoni a ka vende te lira" onclick="validoInputRezervo()" name="shikoni"
+                class="buton">
+        </form>
+    </section>
 
-        <footer id="footer">
-            <div class="contact-section">
+    <footer id="footer">
+        <div class="contact-section">
             <h3 id="kontakt">Contact</h3>
 
             <div class="text-center">
                 <ul>
                     <h3>Na kontaktoni</h3>
-                    <li>044-222-222</li>
-                    <li>049-222-222</li>
-                    <li>045-222-222</li>
+                    <br>
+                    <li>044-123-321</li>
+                    <li>049-456-654</li>
+                    <li>045-789-987</li>
                 </ul>
- 
+
                 <ul>
-                    <h3>Email:</h3>
+                    <h3>Email</h3>
+                    <br>
                     <li>malmikullovci@gmail.com</li>
                     <li>donat.halimi03@gmail.com</li>
                 </ul>
-           
 
-            <div id="btn" >
-                <h3>Na ndiqni ne rrjetet sociale</h3>
-                <button type="button" class="btn btn-primary btn-circle btn-sm" ><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></button>
-                <button type="button" class="btn btn-danger btn-circle btn-sm"><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></button>
-                <button type="button" class="btn btn-info btn-circle btn-sm"><a  href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></button>
-            </div>
 
-            
-            <ul>
-                <h3 >Adresa</h3>
-                <li>Rruga Mbretresha Teute,Mitrovice</li>
-                <li>Rruga Afrim Loxha,Prishtine</li>
-                <li>Rruga Deshmoret E Kombit,Ferizaj</li>
-                <li>Rruga Tirana,Prizren</li>
-            </ul>
+                <div id="btn">
+                    <h3>Na ndiqni ne rrjetet sociale</h3>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-circle btn-sm"><a
+                            href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></button>
+                    <button type="button" class="btn btn-danger btn-circle btn-sm"><a
+                            href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></button>
+                    <button type="button" class="btn btn-info btn-circle btn-sm"><a href="https://www.twitter.com/"><i
+                                class="fa fa-twitter"></i></a></button>
+                </div>
+
+
+                <ul>
+                    <h3>Adresa</h3>
+                    <br>
+                    <li>Rruga Mbretresha Teute,Mitrovice</li>
+                    <li>Rruga Afrim Loxha,Prishtine</li>
+                    <li>Rruga Deshmoret E Kombit,Ferizaj</li>
+                    <li>Rruga Tirana,Prizren</li>
+                </ul>
             </div>
         </div>
 
-        </footer>
-        <script src="javascript/javascript.js"></script>
+    </footer>
+    <script src="javascript/javascript.js"></script>
 </body>
 
 </html>
