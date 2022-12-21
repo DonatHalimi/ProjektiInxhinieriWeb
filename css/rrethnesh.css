@@ -16,7 +16,7 @@ body {
 .navbar-container {
     display: flex;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 40px;
     height: 100%;
     color: white;
     font-family: "Sen", sans-serif;
@@ -34,7 +34,7 @@ body {
     max-width: none;
     float: top;
     margin-right: 20px;
-    width: 250px;
+    width: 270px;
     height: 150px;
 }
 

@@ -38,16 +38,15 @@ body {
     max-width: none;
     float: top;
     margin-right: 20px;
-    width: 250px;
+    width: 270px;
     height: 150px;
 }
 
 .menu-container {
     flex: 6;
-    margin-left: -40px;
+    margin-left: -30px;
     margin-bottom: 35px;
 }
-
 
 .menu-list {
     display: flex;
@@ -59,6 +58,16 @@ body {
     margin-right: 50px;
 }
 
+.linku {
+    text-decoration: none;
+    color: white;
+}
+
+#login-a {
+    margin-left: 300px;
+    margin-top: 3px;
+}
+
 .movie-list-description1 {
     position: relative;
     left: 30px;
@@ -68,16 +77,6 @@ body {
     padding-left: 30px;
     height: 300px;
     float: left;
-}
-
-.linku {
-    text-decoration: none;
-    color: white;
-}
-
-#login-a {
-    margin-left: 300px;
-    margin-top: 3px;
 }
 
 .movie-list {
