@@ -6,16 +6,15 @@ function validoInput() {
 
     if (emailUserit == "" && passUserit == "") {
         alert("Duhet te shenosh email dhe password!");
-
-    } else if (emailUserit == "") {
-        alert("Duhet te shenosh email!");
-
-    } else if (passUserit == "") {
-        alert("Duhet te shenosh password!");
-
-    }
-    else {
-        alert("Ju keni hyre me sukses!");
+        return;
+    } if (emailUserit == "") {
+        alert("Email eshte shkruar gabim!\n\nEmail nuk duhet te jete i zbrazte!");
+    } if (regexEmail != true) {
+        alert("Email eshte shkruar gabim!\n\nEmail mund te kete shkronja te medha ose te vogla!\nEmail duhet te kete shenjen @\nEmail duhet te perfundoj me .com ose .net");
+    }if (passUserit == "") {
+        alert("Password eshte shkruar gabim!\n\nPassword nuk duhet te jete i zbrazte!");
+    } if (regexPassword != true) {
+        alert("Password eshte shkruar gabim!\n\nPassword duhet te jete i gjate minimum 7 karaktere!\nPasswordi duhet te filloj me shkronje te madhe!");
     }
 }
 
@@ -28,7 +27,7 @@ function validoInputSignup() {
 
     if (emriUserit == "" && mbiemrilUserit == "" && emailUseritS == "" && passUseritS == "" && passKUseritS == "") {
         alert("Duhet te plotesoni te dhenat!");
-
+        return;
     } else if (emriUserit == "") {
         alert("Duhet te shenoni emrin!");
 
