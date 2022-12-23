@@ -19,9 +19,13 @@ function validoInput() {
 }
 
 function validoInputSignup() {
+    var regexEmriU = /^[A-Z][A-Za-z]{1,}$/;
     var emriUserit = document.getElementById('emri').value;
+    var regexMbimriU = /^[A-Z][A-Za-z]{1,}$/;
     var mbiemrilUserit = document.getElementById('mbiemri').value;
+    var regexEmailUserit = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(com|net)$/;
     var emailUseritS = document.getElementById('emailS').value;
+    var regexPasswordUserit = /^[A-Z]+[A-Za-z0-9!@#$%^&*()_+=-]{7,}[0-9!@#$%^&*()_+=-]/;
     var passUseritS = document.getElementById('passwordS').value;
     var passKUseritS = document.getElementById('passwordK').value;
 
