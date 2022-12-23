@@ -1,7 +1,7 @@
 function validoInput() {
-    var regexEmail=/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(com|net)$/;
+    var regexEmail = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(com|net)$/;
     var emailUserit = document.getElementById('email').value;
-    var regexPassword=/^[A-Z]+[A-Za-z0-9!@#$%^&*()_+=-]{7,}[0-9!@#$%^&*()_+=-]/;
+    var regexPassword = /^[A-Z]+[A-Za-z0-9!@#$%^&*()_+=-]{7,}[0-9!@#$%^&*()_+=-]/;
     var passUserit = document.getElementById('password').value;
 
     if (emailUserit == "" && passUserit == "") {
@@ -14,7 +14,7 @@ function validoInput() {
         alert("Duhet te shenosh password!");
 
     }
-     else {
+    else {
         alert("Ju keni hyre me sukses!");
     }
 }
@@ -58,34 +58,44 @@ function validoInputSignup() {
     }
 
 
-function validoInputRezervo() {
-    var dataZ = document.getElementById('dataZ').value;
-    var orari = document.getElementById('orari').value;
-    var persona = document.getElementById('persona').value;
-    var filmZ = document.getElementById('filmZ').value;
-    var qytet = document.getElementById('qytet').value;
+    function validoInputRezervo() {
+        var dataZ = document.getElementById('dataZ').value;
+        var orari = document.getElementById('orari').value;
+        var persona = document.getElementById('persona').value;
+        var filmZ = document.getElementById('filmZ').value;
+        var qytet = document.getElementById('qytet').value;
 
 
-    if (dataZ == "" && orari == "" && persona == "" && filmZ == "" && qytet == "") {
-        alert("Duhet te plotesoni te dhenat!");
+        if (dataZ == "" && orari == "" && persona == "" && filmZ == "" && qytet == "") {
+            alert("Duhet te plotesoni te dhenat!");
 
-    } else if (dataZ == "") {
-        alert("Duhet te zgjedhni daten");
+        } else if (dataZ == "") {
+            alert("Duhet te zgjedhni daten");
 
-    } else if (orari == "") {
-        alert("Duhet te zgjedhni orarin");
+        } else if (orari == "") {
+            alert("Duhet te zgjedhni orarin");
 
-    } else if (persona == "") {
-        alert("Zgjedhni sa persona jeni");
+        } else if (persona == "") {
+            alert("Zgjedhni sa persona jeni");
 
-    } else if (filmZ == "") {
-        alert("Zgjedhni cilin film deshironi ta shikoni");
+        } else if (filmZ == "") {
+            alert("Zgjedhni cilin film deshironi ta shikoni");
 
-    } else if (qytet == "") {
-        alert("Zgjedhni qytetin ku deshironi te rezervoni");
+        } else if (qytet == "") {
+            alert("Zgjedhni qytetin ku deshironi te rezervoni");
 
-    } else {
-        alert("Ju rezervuat me sukses")
+        } else {
+            alert("Ju rezervuat me sukses")
+        }
     }
 }
-}
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})
