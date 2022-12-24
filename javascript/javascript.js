@@ -48,31 +48,31 @@ function validoInputSignup() {
     } if (emriUserit == "") {
         alert("Emri eshte shkruar gabim!\nEmri nuk duhet te jete i zbrazte!");
 
-    } if (!regexEmriU.test(emriUserit)) {
+    }else if (!regexEmriU.test(emriUserit)) {
         alert("Emri eshte shkruar gabim!\n\nEmri duhet te filloj me shkronje te madhe!\nEmri duhet te jete minimum 2 karaktere!");
 
     } if (mbiemrilUserit == "") {
         alert("Mbiemri eshte shkruar gabim!\nMbiemri nuk duhet te jete i zbrazte!");
 
-    } if (!regexMbiemriU.test(mbiemrilUserit)) {
+    }else if (!regexMbiemriU.test(mbiemrilUserit)) {
         alert("Mbiemri eshte shkruar gabim!\n\nMbiemri duhet te filloj me shkronje te madhe!\nMbiemri duhet te jete minimum 2 karaktere!");
 
     } if (emailUseritS == "") {
         alert("Email eshte shkruar gabim!\nEmail nuk duhet te jete i zbrazte!");
 
-    } if (!regexEmailUserit.test(emailUseritS)) {
+    }else if (!regexEmailUserit.test(emailUseritS)) {
         alert("Email eshte shkruar gabim!\n\nEmail mund te kete shkronja te medha ose te vogla!\nEmail duhet te kete shenjen @\nEmail duhet te perfundoj me .com ose .net");
 
     } if (passUseritS == "") {
         alert("Password eshte shkruar gabim!\n\nPassword nuk duhet te jete i zbrazte!");
 
-    } if (!regexPasswordUserit.test(passUseritS)) {
+    }else if (!regexPasswordUserit.test(passUseritS)) {
         alert("Password eshte shkruar gabim!\n\nPassword duhet te jete i gjate minimum 7 karaktere!\nPasswordi duhet te filloj me shkronje te madhe!");
 
     } if (passKUseritS == "") {
         alert("Duhet ta konfirmoni passwordin!");
 
-    } if (passUseritS != passKUseritS) {
+    } else if (passUseritS != passKUseritS) {
         alert("Password-et nuk perputhen!");
 
     } else {
