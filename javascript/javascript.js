@@ -27,7 +27,7 @@ function validoInput() {
 }
 
 function validoInputSignup() {
-    var regexEmriU = /^[A-Z]+[A-Za-z]{2,}$/;
+    var regexEmriU = /^[A-Z]+[A-Za-z]{2,}/;
     var emriUserit = document.getElementById('emri').value;
 
     var regexMbiemriU = /^[A-Z]+[A-Za-z]{2,}$/;
@@ -36,7 +36,7 @@ function validoInputSignup() {
     var regexEmailUserit = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(com|net)$/;
     var emailUseritS = document.getElementById('emailS').value;
 
-    var regexPasswordUserit = /^[A-Z]+[A-Za-z0-9!@#$%^&*()_+=-]{7,}[0-9!@#$%^&*()_+=-]/;
+    var regexPasswordUserit = /^[A-Z]+[A-Za-z0-9!@#$%^&*()_+=-]{7,}/;
     var passUseritS = document.getElementById('passwordS').value;
 
     var passKUseritS = document.getElementById('passwordK').value;
@@ -48,32 +48,35 @@ function validoInputSignup() {
     } if (emriUserit == "") {
         alert("Emri eshte shkruar gabim!\nEmri nuk duhet te jete i zbrazte!");
 
-    } if (regexEmriU != true) {
+    }else if (!regexEmriU.test(emriUserit)) {
         alert("Emri eshte shkruar gabim!\n\nEmri duhet te filloj me shkronje te madhe!\nEmri duhet te jete minimum 2 karaktere!");
 
-    } if (mbiemrilUserit == "") {
+    }else if (mbiemrilUserit == "") {
         alert("Mbiemri eshte shkruar gabim!\nMbiemri nuk duhet te jete i zbrazte!");
 
-    } if (regexMbiemriU != true) {
+    }else if (!regexMbiemriU.test(mbiemrilUserit)) {
         alert("Mbiemri eshte shkruar gabim!\n\nMbiemri duhet te filloj me shkronje te madhe!\nMbiemri duhet te jete minimum 2 karaktere!");
 
-    } if (emailUseritS == "") {
+    }else if (emailUseritS == "") {
         alert("Email eshte shkruar gabim!\nEmail nuk duhet te jete i zbrazte!");
 
-    } if (regexEmailUserit != true) {
+    }else if (!regexEmailUserit.test(emailUseritS)) {
         alert("Email eshte shkruar gabim!\n\nEmail mund te kete shkronja te medha ose te vogla!\nEmail duhet te kete shenjen @\nEmail duhet te perfundoj me .com ose .net");
 
-    } if (passUseritS == "") {
+    }else if (passUseritS == "") {
         alert("Password eshte shkruar gabim!\n\nPassword nuk duhet te jete i zbrazte!");
 
-    } if (regexPasswordUserit != true) {
+    }else if (!regexPasswordUserit.test(passUseritS)) {
         alert("Password eshte shkruar gabim!\n\nPassword duhet te jete i gjate minimum 7 karaktere!\nPasswordi duhet te filloj me shkronje te madhe!");
 
-    } if (passKUseritS == "") {
+    }else if (passKUseritS == "") {
         alert("Duhet ta konfirmoni passwordin!");
 
-    } if (passUseritS != passKUseritS) {
+    }else if (passUseritS != passKUseritS) {
         alert("Password-et nuk perputhen!");
+    }else{
+        alert("Jeni regjistruar me sukses");
+        window.location.href("login.html");
     }
 
     function validoInputRezervo() {
