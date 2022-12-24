@@ -20,7 +20,8 @@ function validoInput() {
 
     } if (!regexPassword.test(passUserit)) {
         alert("Password eshte shkruar gabim!\n\nPassword duhet te jete i gjate minimum 7 karaktere!\nPasswordi duhet te filloj me shkronje te madhe!\nPasswordi duhet te mbaroje me ndonje numer apo shenje");
-    } else {
+
+    } else if (regexEmail.test(emailUserit) && regexPassword.test(passUserit)) {
         alert("Jeni regjistruar me sukses!");
         window.location.href = "index.html";
     }
@@ -48,25 +49,25 @@ function validoInputSignup() {
     } if (emriUserit == "") {
         alert("Emri eshte shkruar gabim!\nEmri nuk duhet te jete i zbrazte!");
 
-    }else if (!regexEmriU.test(emriUserit)) {
+    } else if (!regexEmriU.test(emriUserit)) {
         alert("Emri eshte shkruar gabim!\n\nEmri duhet te filloj me shkronje te madhe!\nEmri duhet te jete minimum 2 karaktere!");
 
     } if (mbiemrilUserit == "") {
         alert("Mbiemri eshte shkruar gabim!\nMbiemri nuk duhet te jete i zbrazte!");
 
-    }else if (!regexMbiemriU.test(mbiemrilUserit)) {
+    } else if (!regexMbiemriU.test(mbiemrilUserit)) {
         alert("Mbiemri eshte shkruar gabim!\n\nMbiemri duhet te filloj me shkronje te madhe!\nMbiemri duhet te jete minimum 2 karaktere!");
 
     } if (emailUseritS == "") {
         alert("Email eshte shkruar gabim!\nEmail nuk duhet te jete i zbrazte!");
 
-    }else if (!regexEmailUserit.test(emailUseritS)) {
+    } else if (!regexEmailUserit.test(emailUseritS)) {
         alert("Email eshte shkruar gabim!\n\nEmail mund te kete shkronja te medha ose te vogla!\nEmail duhet te kete shenjen @\nEmail duhet te perfundoj me .com ose .net");
 
     } if (passUseritS == "") {
         alert("Password eshte shkruar gabim!\n\nPassword nuk duhet te jete i zbrazte!");
 
-    }else if (!regexPasswordUserit.test(passUseritS)) {
+    } else if (!regexPasswordUserit.test(passUseritS)) {
         alert("Password eshte shkruar gabim!\n\nPassword duhet te jete i gjate minimum 7 karaktere!\nPasswordi duhet te filloj me shkronje te madhe!");
 
     } if (passKUseritS == "") {
@@ -75,9 +76,10 @@ function validoInputSignup() {
     } else if (passUseritS != passKUseritS) {
         alert("Password-et nuk perputhen!");
 
-    } else {
-        alert("Jeni regjistruar me sukses");
+    } else if (regexEmriU.test(emriUserit) && regexMbiemriU.test(mbiemrilUserit) && regexEmailUserit.test(emailUseritS) && regexPasswordUserit.test(passUseritS) && passUseritS != passKUseritS) {
         window.location.href = "login.html";
+        alert("Jeni regjistruar me sukses!");
+
     }
 
     function validoInputRezervo() {
