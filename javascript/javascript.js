@@ -3,7 +3,7 @@ function validoInput() {
     var regexEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.(com|net)$/;
     var emailUserit = document.getElementById('email').value;
 
-    var regexPassword = /^[A-Z]+[A-Za-z0-9!@#$%^&*()_+=-]{7,}[0-9!@#$%^&*()_+=-]/;
+    var regexPassword = /^[A-Z]+[A-Za-z0-9!@#$%^&*()_+=-]{7,}/;
     var passUserit = document.getElementById('password').value;
 
     if (emailUserit == "" && passUserit == "") {
@@ -12,16 +12,13 @@ function validoInput() {
     }if (emailUserit == "") {
         alert("Email eshte shkruar gabim!\n\nEmail nuk duhet te jete i zbrazte!");
 
-    }else if (regexEmail.test(emailUserit)) {
-            console.log("email eshte shkruar mire")
-    }else{
+    }else if (!regexEmail.test(emailUserit)) {
         alert("Email eshte shkruar gabim!\n\nEmail duhet te kete vetem shkronja te vogla!\nEmail duhet te kete shenjen @\nEmail duhet te perfundoj me .com ose .net");
 
-    }
-    if (passUserit == "") {
+    }else if (passUserit == "") {
         alert("Password eshte shkruar gabim!\n\nPassword nuk duhet te jete i zbrazte!");
 
-    }else if (regexPassword.test(passUserit)) {
+    }else if(!regexPassword.test(passUserit)){
         alert("Password eshte shkruar gabim!\n\nPassword duhet te jete i gjate minimum 7 karaktere!\nPasswordi duhet te filloj me shkronje te madhe!\nPasswordi duhet te mbaroje me ndonje numer apo shenje");
     }else{
         alert("Jeni regjistruar me sukses!");
