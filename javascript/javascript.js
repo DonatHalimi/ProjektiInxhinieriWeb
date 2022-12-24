@@ -22,7 +22,7 @@ function validoInput() {
         alert("Password eshte shkruar gabim!\n\nPassword duhet te jete i gjate minimum 7 karaktere!\nPasswordi duhet te filloj me shkronje te madhe!\nPasswordi duhet te mbaroje me ndonje numer apo shenje");
 
     } else if (regexEmail.test(emailUserit) && regexPassword.test(passUserit)) {
-        alert("Jeni regjistruar me sukses!");
+        alert("Jeni kyqur me sukses!");
         window.location.href = "index.html";
     }
 }
