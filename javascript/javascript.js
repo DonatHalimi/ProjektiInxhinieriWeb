@@ -125,25 +125,37 @@ window.addEventListener("scroll", () => {
     }
 })
 
+var varguIFotove = ['../img/batman-2022.jpg', '../img/black-adam-2022.jpg', '../img/nope-2022.jpg', '../img/wakanda-forever-2022.jpg', '../img/thor-2022.jpg'];
 
-const swiper = new Swiper('.swiper', {
-   autoplay :{
-    delay:3000,
-    disableOnInteraction:false,
-   },
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable:true,
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  
-  });
+var index = 0;
+const koha = 5000;
+
+function krijoSlider() {
+    
+    document.getElementById('foto').src = varguIFotove[index];
+    index++;
+    if (index == varguIFotove.length) {
+        index = 0;
+    }
+    setTimeout(krijoSlider, koha);
+}
+
+krijoSlider();
+
+document.getElementById("prevBtn").addEventListener("click", function(){
+    index--;
+    if (index < 0) {
+        index = varguIFotove.length - 1;
+    }
+    document.getElementById('foto').src = varguIFotove[index];
+});
+
+document.getElementById("nextBtn").addEventListener("click", function(){
+    index++;
+    if (index == varguIFotove.length) {
+        index = 0;
+    }
+    document.getElementById('foto').src = varguIFotove[index];
+
+
+});
