@@ -13,43 +13,37 @@ body {
 /* Ekranet e vogla (Telefoni) */
 @media only screen and (max-width: 767px) {
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 
-    h1 {
-        font-size: 24px;
-        line-height: 1.2;
-        margin-bottom: 10px;
+    .navbar-container {
+        display: flex;
+        position: absolute;
+        left: 0;
     }
 
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
+    .logo-container {
+        padding: 0;
+        margin: 0;
     }
 
-    .header {
-        height: 60px;
-        padding: 10px;
+    #logo {
+        margin-top: 6px;
+        max-width: none;
+        float: top;
+        margin-right: 20px;
+        width: 270px;
+        height: 150px;
     }
 
-    .menu {
-        display: none;
-    }
-
-    .main-content {
-        padding: 20px;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .footer {
-        padding: 10px;
-        text-align: center;
+    .movie-list-item-photo {
+        position: relative;
+        left: 20px;
+        border-radius: 15px;
+        max-width: 100%;
     }
 }
+
 
 /* Ekranet e mesme (Tabletat) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -72,6 +66,7 @@ body {
     body {
         font-size: 40px;
     }
+
     #login-a {
         padding-right: 600px;
     }
@@ -97,13 +92,13 @@ body {
         height: 300px;
         float: left;
     }
-    
+
     .movie-list {
         display: flex;
         align-items: center;
         float: left;
     }
-    
+
     .movie-list-item {
         display: flex;
         margin-top: 100px;
@@ -112,7 +107,7 @@ body {
         float: left;
         object-fit: cover;
     }
-    
+
     .movie-list-item-photo {
         position: relative;
         left: 20px;
