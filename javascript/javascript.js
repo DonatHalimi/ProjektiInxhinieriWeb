@@ -156,6 +156,4 @@ document.getElementById("nextBtn").addEventListener("click", function(){
         index = 0;
     }
     document.getElementById('foto').src = varguIFotove[index];
-
-
 });
