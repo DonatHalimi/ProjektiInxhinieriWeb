@@ -10,6 +10,105 @@ body {
     color: white;
 }
 
+/* Ekranet e vogla (Telefoni) */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        height: 60px;
+        padding: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* Ekranet e mesme (Tabletat) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+}
+
+
+/* Ekranet e medha (Desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .nav li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .main {
+        width: 70%;
+        float: left;
+    }
+
+    .sidebar {
+        width: 30%;
+        float: right;
+    }
+}
+
+/* Ekranet extra te medha (Desktops te medhaj) */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .header {
+        height: 80px;
+        background-color: #fff;
+    }
+}
+
 .navbar {
     position: sticky;
     width: 100%;
