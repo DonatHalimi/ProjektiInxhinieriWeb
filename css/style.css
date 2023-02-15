@@ -72,6 +72,9 @@ body {
     body {
         font-size: 40px;
     }
+    #login-a {
+        padding-right: 600px;
+    }
 }
 
 /* Ekranet extra te medha (Desktops large) */
@@ -81,7 +84,7 @@ body {
     }
 
     #login-a {
-        padding-left: 820px;
+        padding-left: 600px;
     }
 
     .movie-list-description1 {
