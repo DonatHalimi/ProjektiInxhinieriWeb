@@ -502,7 +502,7 @@ body {
 }
 
 /* Ekranet extra te medha (Desktops large) */
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1020px) {
     body {
         font-size: 18px;
     }
