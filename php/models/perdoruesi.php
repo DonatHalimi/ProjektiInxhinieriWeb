@@ -7,14 +7,16 @@ class perdoruesi
     public $mbiemri;
     public $email;
     public $password;
+    public $roli;
 
-    public function __construct($id, $emri, $mbiemri, $email, $password)
+    public function __construct($id, $emri, $mbiemri, $email, $password,$roli)
         {
         $this->id = $id;
         $this->emri = $emri;
         $this->mbiemri = $mbiemri;
         $this->email = $email;
         $this->password = $password;
+        $this->roli = $roli;
         }
 
     public function getId()
@@ -63,6 +65,16 @@ class perdoruesi
         }
 
     public function setPassword($password)
+        {
+        $this->password = $password;
+        }
+
+    public function getRoli()
+        {
+        return $this->roli;
+        }
+
+    public function setRoli($password)
         {
         $this->password = $password;
         }

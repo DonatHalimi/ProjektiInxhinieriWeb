@@ -15,7 +15,7 @@ if (isset($_POST['registerBtn'])) {
         $password = $_POST['password'];
         $id = rand(100, 999);
 
-        $perdoruesi = new perdoruesi($id, $emri, $mbiemri, $email, $password);
+        $perdoruesi = new perdoruesi($id, $emri, $mbiemri, $email, $password,$roli);
         $userRep = new userRep();
         $userRep->insertUser($perdoruesi);
         }

@@ -80,5 +80,22 @@ class userRep
         $statement->execute([$id]);
         echo "<script> alert('User eshte fshire me sukses!') </script>";
         }
+    function kontrolloUser($emri,$password,$authorizedAdminEmails)
+        {
+            if ($emri && password_verify($password, $emri['password'])) {
+    
+                if (in_array($emri['email'], $authorizedAdminEmails)) {
+                    $_SESSION['roli'] = 'admin';
+    
+                    header('Location: dashboard.php');
+                    exit();
+                } else {
+                    $_SESSION['roli'] = 'user';
+    
+                    header('Location: user.php');
+                    exit();
+                }
+            }
+        }
     }
 ?>
