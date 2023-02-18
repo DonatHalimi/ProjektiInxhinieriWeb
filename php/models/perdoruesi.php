@@ -1,18 +1,30 @@
 <?php
 
-abstract class Njeriu
+class perdoruesi
     {
+    private $id;
     public $emri;
     public $mbiemri;
     public $email;
     public $password;
 
-    public function __construct($emri, $mbiemri, $email, $password)
+    public function __construct($id, $emri, $mbiemri, $email, $password)
         {
+        $this->id = $id;
         $this->emri = $emri;
         $this->mbiemri = $mbiemri;
         $this->email = $email;
         $this->password = $password;
+        }
+
+    public function getId()
+        {
+        return $this->id;
+        }
+
+    public function setId($id)
+        {
+        $this->id = $id;
         }
 
     public function getEmri()
