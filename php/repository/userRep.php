@@ -80,22 +80,33 @@ class userRep
         $statement->execute([$id]);
         echo "<script> alert('User eshte fshire me sukses!') </script>";
         }
-    function kontrolloUser($emri,$password,$authorizedAdminEmails)
+
+    public function login($email, $password)
         {
-            if ($emri && password_verify($password, $emri['password'])) {
-    
-                if (in_array($emri['email'], $authorizedAdminEmails)) {
-                    $_SESSION['roli'] = 'admin';
-    
-                    header('Location: dashboard.php');
-                    exit();
-                } else {
-                    $_SESSION['roli'] = 'user';
-    
-                    header('Location: user.php');
-                    exit();
+        $query = "SELECT * FROM perdoruesi WHERE email = ?";
+
+        $stmt = $this->connection->prepare($query);
+
+        $stmt->bindParam(1, $email);
+
+        $stmt->execute();
+
+        if ($stmt->rowCount() == 1) {
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            $hashed_password = $row['password'];
+            if (password_verify($password, $hashed_password)) {
+                $perdoruesi = new perdoruesi(
+                    $row['id'],
+                    $row['emri'],
+                    $row['mbiemri'],
+                    $row['email'],
+                    $row['password'],
+                    $row['roli']
+                );
+                return $perdoruesi;
                 }
             }
+        return null;
         }
     }
 ?>
