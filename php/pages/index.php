@@ -151,7 +151,7 @@
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <script src="javascript/javascript.js"></script>
+    <script src="../../javascript/javascript.js"></script>
 </body>
 
 </html>
