@@ -1,5 +1,8 @@
 <?php
-include '../controller/registerCont.php'
+include '../controller/registerCont.php';
+if (!isset($_SESSION)) {
+    session_start();
+}
     ?>
 
 <!DOCTYPE html>

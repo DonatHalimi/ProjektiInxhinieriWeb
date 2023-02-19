@@ -1,5 +1,10 @@
 <?php
-include '../controller/loginCont.php'
+include '../controller/loginCont.php';
+
+    if(!isset($_SESSION)) {
+    session_start();
+}
+
     ?>
 
 <!DOCTYPE html>
