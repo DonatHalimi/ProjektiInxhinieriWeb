@@ -42,22 +42,19 @@ include '../controller/loginCont.php'
 
     <div id="login-card" class="card">
         <div class="card-body">
-            <form class="form-group" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+           
 
                 <h2 class="text center"><b>Log in</b></h2>
                 <br>
-                <div class="form-group">
+                <form class="form-group" action="../controller/loginCont.php" method="post">
                     <label><b>Email</b></label>
-                    <input type="email" class="form-control" id="email" placeholder="Shkruani email" name="email"
-                        required>
-                </div>
-                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Shkruani email" name="email" required>
+            
                     <label><b>Password</b></label>
                     <input type="password" class="form-control" id="password" placeholder="Shkruani fjalekalimin"
                         name="password" required>
-                </div>
-                <button type="submit" id="button" class="btn btn-primary deep-purple btn-block "
-                    onclick="validoInput()">Dergo</button>
+                
+                <button type="submit" id="button" class="btn btn-primary deep-purple btn-block " onclick="validoInput()">Dergo</button>
             </form>
 
             <p><b>Nuk keni llogari?</b><a href="signup.php"> Regjistrohu</a></p>
