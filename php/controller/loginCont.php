@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
     $user = $userRep->readPerdoruesi($loginPerdoruesi);
 
     if ($user && $user["email"] == $email && $user["password"] == $password) {
-        if ($user["roli"] == 2) {
+        if ($user["roli"] == 1) {
             header("Location: dashboard.php");
             } else {
             header("Location: index.php");
