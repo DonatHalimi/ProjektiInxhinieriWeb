@@ -39,11 +39,16 @@ class userRep
         $email = $loginPerdoruesi->getLoginPerdoruesiEmail();
         $password = $loginPerdoruesi->getLoginPerdoruesiPassword();
 
-        $sql = "SELECT * FROM perdoruesit WHERE email='$email' password = '$password'";
+        $sql = "SELECT * FROM perdoruesit WHERE email='$email'";
 
         $statement = $databaseConnection->query($sql);
         $perdoruesi = $statement->fetch();
-        return $perdoruesi;
+
+        if ($perdoruesi) {
+            return $perdoruesi;
+            } else {
+            return false;
+            }
         }
 
     //Metoda per shfaqjen e te dhenave nga DBH
