@@ -50,19 +50,19 @@ if (!isset($_SESSION)) {
         <form class="form-group" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
 
             <label><b>Emri</b></label>
-            <input id="emri" type="text" placeholder="Shkruani emrin" class="form-control" required>
+            <input id="emri" name="emri"type="text" placeholder="Shkruani emrin" class="form-control" required>
 
             <label><b>Mbiemri</b></label>
-            <input id="mbiemri" type="text" placeholder="Shkruani mbiemrin" class="form-control" required>
+            <input id="mbiemri" name="mbiemri" type="text" placeholder="Shkruani mbiemrin" class="form-control" required>
 
             <label><b>Email</b></label>
-            <input id="emailS" type="email" placeholder="Shkruani email" class="form-control" required>
+            <input id="emailS" name="email" type="email" placeholder="Shkruani email" class="form-control" required>
 
             <label><b>Password</b></label>
-            <input id="passwordS" type="password" placeholder="Shkruani passwordin" class="form-control" required>
+            <input id="passwordS" name="password" type="password" placeholder="Shkruani passwordin" class="form-control" required>
 
             <label><b>Konfirmo Password</b></label>
-            <input id="passwordK" type="password" placeholder="Konfirmoni passwordin" class="form-control" required>
+            <input id="passwordK"  type="password" placeholder="Konfirmoni passwordin" class="form-control" required>
 
             <br>
             <input type="submit" id="button" onclick="validoInputSignup()"
