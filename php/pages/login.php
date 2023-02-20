@@ -56,8 +56,6 @@
 
             <p><b>Nuk keni llogari?</b><a href="signup.php"> Regjistrohu</a></p>
 
-            <script src="../../javascript/javascript.js"></script>
-
         </div>
     </div>
 

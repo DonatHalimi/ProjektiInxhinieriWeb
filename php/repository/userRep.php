@@ -17,35 +17,35 @@ class userRep
         {
         $conn = $this->connection;
 
-       
+
         $emri = $perdoruesi->getRegisterPerdoruesiEmri();
         $mbiemri = $perdoruesi->getRegisterPerdoruesiMbiemri();
         $email = $perdoruesi->getRegisterPerdoruesiEmail();
         $password = $perdoruesi->getRegisterPerdoruesiPassword();
-        
+
 
         $sql = "INSERT INTO perdoruesit (emri,mbiemri,email,password,roli) VALUES (?,?,?,?,?,?)";
 
         $statement = $conn->prepare($sql);
-        $statement->execute([$emri, $mbiemri, $email, $password,2]);
+        $statement->execute([$emri, $mbiemri, $email, $password, 2]);
         //Insertimi i 2 adminave
-        $statement->execute(['Mal','Mikullovci','malmikullovci@gmail.com','Ubtubt123',1]); 
-        $statement->execute(['Donat','Halimi','donat.halimi03@gmail.com','Ubtubt1234',1]); 
+        $statement->execute([1, 'Mal', 'Mikullovci', 'malmikullovci@gmail.com', 'Ubtubt123', 1]);
+        $statement->execute([1, 'Donat', 'Halimi', 'donat.halimi03@gmail.com', 'Ubtubt1234', 1]);
 
         echo "<script> alert('User' $emri eshte insertuar me sukses!') </script>";
         }
 
-        function readPerdoruesi($loginPerdoruesi)
+    function readPerdoruesi($loginPerdoruesi)
         {
-            $databaseConnection = $this->connection;
-            $email = $loginPerdoruesi->getLoginPerdoruesiEmail();
-            $password = $loginPerdoruesi->getLoginPerdoruesiPassword();
-    
-            $sql = "SELECT * FROM perdoruesit WHERE email='$email'";
-    
-            $statement = $databaseConnection->query($sql);
-            $perdoruesi = $statement->fetch();
-            return $perdoruesi;
+        $databaseConnection = $this->connection;
+        $email = $loginPerdoruesi->getLoginPerdoruesiEmail();
+        $password = $loginPerdoruesi->getLoginPerdoruesiPassword();
+
+        $sql = "SELECT * FROM perdoruesit WHERE email='$email'";
+
+        $statement = $databaseConnection->query($sql);
+        $perdoruesi = $statement->fetch();
+        return $perdoruesi;
         }
 
     //Metoda per shfaqjen e te dhenave nga DBH
@@ -73,7 +73,7 @@ class userRep
 
 
     //Metoda per update te dhenave 
-    function perditesoUser($id, $emri, $mbiemri, $email, $password,$roli)
+    function perditesoUser($id, $emri, $mbiemri, $email, $password, $roli)
         {
         $conn = $this->connection;
 
@@ -82,7 +82,7 @@ class userRep
         $statement = $conn->prepare($sql);
 
 
-        $statement->execute([$emri, $mbiemri, $email, $password,$roli, $id]);
+        $statement->execute([$emri, $mbiemri, $email, $password, $roli, $id]);
         echo "<script> alert('User eshte perditesuar me sukses!') </script>";
         }
 
