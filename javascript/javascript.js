@@ -23,7 +23,6 @@ function validoInput() {
 
     } else if (regexEmail.test(emailUserit) && regexPassword.test(passUserit)) {
         alert("Jeni kyqur me sukses!");
-        window.location.href = "index.php";
     }
 }
 
