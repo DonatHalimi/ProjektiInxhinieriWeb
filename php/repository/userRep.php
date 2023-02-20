@@ -22,11 +22,12 @@ class userRep
         $mbiemri = $perdoruesi->getMbiemri();
         $email = $perdoruesi->getEmail();
         $password = $perdoruesi->getPassword();
+        $roli= $perdoruesi->getRoli();
 
-        $sql = "INSERT INTO perdoruesit (id,emri,mbiemri,email,password) VALUES (?,?,?,?,?)";
+        $sql = "INSERT INTO perdoruesit (id,emri,mbiemri,email,password,roli) VALUES (?,?,?,?,?,?)";
 
         $statement = $conn->prepare($sql);
-        $statement->execute([$id, $emri, $mbiemri, $email, $password]);
+        $statement->execute([$id, $emri, $mbiemri, $email, $password,$roli]);
         echo "<script> alert('User eshte insertuar me sukses!') </script>";
         }
 
