@@ -34,7 +34,7 @@
                <td>$perdoruesi[email]</td>
                <td>$perdoruesi[password]</td>
                <td>$perdoruesi[roli]</td>               
-               <td><a href='edit.php?id=$perdoruesi[id]'>Edit</a></td>
+               <td><a href='../views/edit.php?id=$perdoruesi[id]'>Edit</a></td>
                <td><a href='delete.php?id=$perdoruesi[id]'>Delete</a></td>
            </tr>
            ";

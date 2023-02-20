@@ -76,9 +76,7 @@ function validoInputSignup() {
         alert("Password-et nuk perputhen!");
 
     } else if (regexEmriU.test(emriUserit) && regexMbiemriU.test(mbiemrilUserit) && regexEmailUserit.test(emailUseritS) && regexPasswordUserit.test(passUseritS) && passUseritS != passKUseritS) {
-        window.location.href = "login.html";
         alert("Jeni regjistruar me sukses!");
-
     }
 
     function validoInputRezervo() {
@@ -124,7 +122,7 @@ window.addEventListener("scroll", () => {
     }
 })
 
-var varguIFotove = ['../img/batman-2022.jpg', '../img/black-adam-2022.jpg', '../img/nope-2022.jpg', '../img/wakanda-forever-2022.jpg', '../img/thor-2022.jpg'];
+var varguIFotove = ['../../img/batman-2022.jpg', '../../img/black-adam-2022.jpg', '../../img/nope-2022.jpg', '../../img/wakanda-forever-2022.jpg', '../../img/thor-2022.jpg'];
 
 var index = 0;
 const koha = 5000;

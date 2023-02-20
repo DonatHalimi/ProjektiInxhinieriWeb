@@ -9,7 +9,7 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/arkivi.css">
+    <link rel="stylesheet" href="../../css/arkivi.css">
 
     <title>Arkivi</title>
 </head>
@@ -18,16 +18,16 @@
     <div class="navbar">
         <div class="navbar-container">
             <div class="logo-container">
-                <a href="index.html"><img id="logo" src="../img/cinema-paradiso.jpg" alt=""></a>
+                <a href="index.php"><img id="logo" src="../../img/cinema-paradiso.jpg" alt=""></a>
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item active"><a href="index.html" class="linku">Home</a></li>
-                    <li class="menu-list-item"><a href="detajet.html" class="linku">Filmat</a></li>
-                    <li class="menu-list-item"><a href="arkivi.html" class="linku">Arkivi</a></li>
-                    <li class="menu-list-item"><a href="rrethnesh.html" class="linku">Rreth Nesh</a></li>
-                    <li class="menu-list-item"><a href="index.html#footer" class="linku">Contact</a></li>
-                    <li><a href="login.html" class="linku" id="login-a">Log in</a></li>
+                    <li class="menu-list-item active"><a href="index.php" class="linku">Home</a></li>
+                    <li class="menu-list-item"><a href="detajet.php" class="linku">Filmat</a></li>
+                    <li class="menu-list-item"><a href="arkivi.php" class="linku">Arkivi</a></li>
+                    <li class="menu-list-item"><a href="rrethnesh.php" class="linku">Rreth Nesh</a></li>
+                    <li class="menu-list-item"><a href="index.php#footer" class="linku">Contact</a></li>
+                    <li><a href="login.php" class="linku" id="login-a">Log in</a></li>
                 </ul>
             </div>
         </div>
@@ -36,7 +36,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" href="#" src="../img/the-godfather.jpg" alt="">
+                <img class="movie-list-item-photo" href="#" src="../../img/the-godfather.jpg" alt="">
                 <figcaption class="covertxt">The Godfather</figcaption>
             </figure>
         </div>
@@ -45,7 +45,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/black-panther.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/black-panther.jpg" alt="">
                 <figcaption class="covertxt">Black Panther</figcaption>
             </figure>
         </div>
@@ -54,7 +54,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/happy-death-day.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/happy-death-day.jpg" alt="">
                 <figcaption class="covertxt">Happy Death Day</figcaption>
             </figure>
         </div>
@@ -63,7 +63,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/logan.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/logan.jpg" alt="">
                 <figcaption class="covertxt">Logan</figcaption>
             </figure>
         </div>
@@ -72,7 +72,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/dune.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/dune.jpg" alt="">
                 <figcaption class="covertxt">Dune</figcaption>
             </figure>
         </div>
@@ -81,7 +81,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/knives-out.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/knives-out.jpg" alt="">
                 <figcaption class="covertxt">Knives Out</figcaption>
             </figure>
         </div>
@@ -90,7 +90,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/no-time-to-die.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/no-time-to-die.jpg" alt="">
                 <figcaption class="covertxt">No Time To Die</figcaption>
             </figure>
         </div>
@@ -99,7 +99,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/home-alone.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/home-alone.jpg" alt="">
                 <figcaption class="covertxt">Home Alone</figcaption>
             </figure>
         </div>
@@ -108,7 +108,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/pinocchio.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/pinocchio.jpg" alt="">
                 <figcaption class="covertxt">Pinocchio</figcaption>
             </figure>
         </div>
@@ -117,7 +117,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/frozen.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/frozen.jpg" alt="">
                 <figcaption class="covertxt">Frozen</figcaption>
             </figure>
         </div>
@@ -128,7 +128,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/black-swan.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/black-swan.jpg" alt="">
                 <figcaption class="covertxt">Black Swan</figcaption>
             </figure>
         </div>
@@ -137,7 +137,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/lightyear-2022.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/lightyear-2022.jpg" alt="">
                 <figcaption class="covertxt">Lightyear</figcaption>
             </figure>
         </div>
@@ -146,7 +146,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/spiderman-no-way-home-2021.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/spiderman-no-way-home-2021.jpg" alt="">
                 <figcaption class="covertxt">Spiderman No Way Home</figcaption>
             </figure>
         </div>
@@ -155,7 +155,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/the-polar-express.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/the-polar-express.jpg" alt="">
                 <figcaption class="covertxt">The Polar Express</figcaption>
             </figure>
         </div>
@@ -164,7 +164,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/the-batman.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/the-batman.jpg" alt="">
                 <figcaption class="covertxt">The Batman</figcaption>
             </figure>
         </div>
@@ -177,7 +177,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/1917.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/1917.jpg" alt="">
                 <figcaption class="covertxt">1917</figcaption>
             </figure>
         </div>
@@ -186,7 +186,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/creed.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/creed.jpg" alt="">
                 <figcaption class="covertxt">Creed</figcaption>
             </figure>
         </div>
@@ -195,7 +195,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/dark-knight.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/dark-knight.jpg" alt="">
                 <figcaption class="covertxt">Dark Knight</figcaption>
             </figure>
         </div>
@@ -204,7 +204,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/django-unchained.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/django-unchained.jpg" alt="">
                 <figcaption class="covertxt">Django Unchained</figcaption>
             </figure>
         </div>
@@ -213,7 +213,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/hangover-part-2.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/hangover-part-2.jpg" alt="">
                 <figcaption class="covertxt">Hangover Part 2</figcaption>
             </figure>
         </div>
@@ -226,7 +226,7 @@
     <div class="movie-list">
         <div class="movie-list-item">
             <figure>
-                <img class="movie-list-item-photo" src="../img/iron-man-2.jpg" alt="">
+                <img class="movie-list-item-photo" src="../../img/iron-man-2.jpg" alt="">
                 <figcaption class="covertxt">Iron Man 2</figcaption>
             </figure>
         </div>
@@ -840,7 +840,7 @@
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <script src="javascript/javascript.js"></script>
+    <script src="../../javascript/javascript.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/rrethnesh.css">
+    <link rel="stylesheet" href="../../css/rrethnesh.css">
 
     <title>Rreth Nesh</title>
 </head>
@@ -22,16 +22,16 @@
     <div class="navbar">
         <div class="navbar-container">
             <div class="logo-container">
-                <a href="index.html"><img id="logo" src="../img/cinema-paradiso.jpg" alt=""></a>
+                <a href="index.php"><img id="logo" src="../../img/cinema-paradiso.jpg" alt=""></a>
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item active"><a href="index.html" class="linku">Home</a></li>
-                    <li class="menu-list-item"><a href="detajet.html" class="linku">Filmat</a></li>
-                    <li class="menu-list-item"><a href="arkivi.html" class="linku">Arkivi</a></li>
-                    <li class="menu-list-item"><a href="rrethnesh.html" class="linku">Rreth Nesh</a></li>
-                    <li class="menu-list-item"><a href="index.html#footer" class="linku">Contact</a></li>
-                    <li><a href="login.html" class="linku" id="login-a">Log in</a></li>
+                    <li class="menu-list-item active"><a href="index.php" class="linku">Home</a></li>
+                    <li class="menu-list-item"><a href="detajet.php" class="linku">Filmat</a></li>
+                    <li class="menu-list-item"><a href="arkivi.php" class="linku">Arkivi</a></li>
+                    <li class="menu-list-item"><a href="rrethnesh.php" class="linku">Rreth Nesh</a></li>
+                    <li class="menu-list-item"><a href="index.php#footer" class="linku">Contact</a></li>
+                    <li><a href="login.php" class="linku" id="login-a">Log in</a></li>
                 </ul>
             </div>
         </div>
@@ -93,7 +93,7 @@
             <i class="fas fa-chevron-up"></i>
         </a>
 
-        <script src="javascript/javascript.js"></script>
+        <script src="../../javascript/javascript.js"></script>
 </body>
 
 </html>

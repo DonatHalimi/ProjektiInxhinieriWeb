@@ -6,5 +6,5 @@ $userRepository = new userRep();
 
 $userRepository->deleteUserById($id);
 
-header("location:dashboard.php");
+header("Location:dashboard.php");
 ?>

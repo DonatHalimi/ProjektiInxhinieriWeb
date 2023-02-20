@@ -27,10 +27,10 @@ class userRep
         $statement = $conn->prepare($sql);
         $statement->execute([$emri, $mbiemri, $email, $password, 2]);
         //Insertimi i 2 adminave
-        $statement->execute(['Mal', 'Mikullovci', 'malmikullovci@gmail.com', 'Ubtubt123', 1]);
-        $statement->execute(['Donat', 'Halimi', 'donat.halimi03@gmail.com', 'Ubtubt1234', 1]);
+        // $statement->execute(['Mal', 'Mikullovci', 'malmikullovci@gmail.com', 'Ubtubt123', 1]);
+        // $statement->execute(['Donat', 'Halimi', 'donat.halimi03@gmail.com', 'Ubtubt1234', 1]);
 
-        echo "<script> alert('User' $emri eshte insertuar me sukses!') </script>";
+        echo "<script> alert('User {$emri} eshte insertuar me sukses!') </script>";
         }
 
     function readPerdoruesi($loginPerdoruesi)
