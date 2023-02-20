@@ -54,6 +54,7 @@ class perdoruesi
         {
         return $this->email;
         }
+       
     public function setEmail($email)
         {
         $this->email = $email;

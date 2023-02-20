@@ -1,40 +1,44 @@
 <?php
 include_once '../repository/userRep.php';
-include_once '../models/perdoruesi.php';
+include_once '../models/LoginPerdoruesi.php';
 
-$authorizedAdminEmails = array(
-    'malmikullovci@gmail.com',
-    'donat.halimi03@gmail.com'
-);
-
-function kontrolloUser($perdoruesi, $authorizedAdminEmails)
+    
+    if(isset($_POST['login']))
     {
-    if ($perdoruesi && password_verify($_POST['password'], $perdoruesi->getPassword())) {
-        if (in_array($perdoruesi->getEmail(), $authorizedAdminEmails)) {
-            $_SESSION['roli'] = 'admin';
-            header('Location: dashboard.php');
-            exit();
-            } else {
-            $_SESSION['roli'] = 'user';
-            header('Location: index.php');
-            exit();
-            }
-        } else {
-        echo "Kredencialet e hyrjes nuk jane te sakta!";
-        }
-    }
-
-if (isset($_POST['loginBtn'])) {
-    if (empty($_POST['email']) || empty($_POST['password'])) {
-        echo "Ju lutem mbushni te gjitha fushat!";
-        } else {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
+        $loginPerdoruesi  = new LoginPerdoruesi($email,$password);
         $userRep = new userRep();
-        $perdoruesi = $userRep->login($email, $password);
+        $user = $userRep->readPerdoruesi($loginPerdoruesi);
 
-        kontrolloUser($perdoruesi, $authorizedAdminEmails);
+        if($user["email"] == $email && $user["password"] == $password)
+        {
+            if($user["Role"] == 1)
+            {
+                header("Location: dashboard.php");
+            }
+            else
+            {
+                header("Location: index.php");
+            }
+        }
+        else
+        {
+            $alert = "<script>alert('Invalid email and password!');</script>";
+            echo $alert;
+            echo "<script>
+            if ( window.history.replaceState ) {
+                window.history.replaceState( null, null, window.location.href = 'login.php' );
+            }
+        </script>";
+        
         }
     }
+
+
+
+
+
+
 ?>

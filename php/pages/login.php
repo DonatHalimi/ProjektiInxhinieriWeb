@@ -1,12 +1,3 @@
-<?php
-include '../controller/loginCont.php';
-
-    if(!isset($_SESSION)) {
-    session_start();
-}
-
-    ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -51,7 +42,7 @@ include '../controller/loginCont.php';
 
                 <h2 class="text center"><b>Log in</b></h2>
                 <br>
-                <form class="form-group" action="../controller/loginCont.php" method="post">
+                <form class="form-group" method="post">
                     <label><b>Email</b></label>
                     <input type="email" class="form-control" id="email" placeholder="Shkruani email" name="email" required>
             
@@ -59,8 +50,9 @@ include '../controller/loginCont.php';
                     <input type="password" class="form-control" id="password" placeholder="Shkruani fjalekalimin"
                         name="password" required>
                 
-                <button type="submit" id="button" class="btn btn-primary deep-purple btn-block " onclick="validoInput()">Dergo</button>
+                <button type="submit" id="button" name="login" class="btn btn-primary deep-purple btn-block " onclick="validoInput()">Dergo</button>
             </form>
+            <?php include_once '../controller/loginCont.php';?> 
 
             <p><b>Nuk keni llogari?</b><a href="signup.php"> Regjistrohu</a></p>
 

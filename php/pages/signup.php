@@ -1,10 +1,3 @@
-<?php
-include '../controller/registerCont.php';
-if (!isset($_SESSION)) {
-    session_start();
-}
-    ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -47,7 +40,7 @@ if (!isset($_SESSION)) {
 
     <div class="signup-box">
         <h1><b>Regjistrimi</b></h1>
-        <form class="form-group" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
+        <form class="form-group" method="post">
 
             <label><b>Emri</b></label>
             <input id="emri" name="emri"type="text" placeholder="Shkruani emrin" class="form-control" required>
@@ -66,8 +59,9 @@ if (!isset($_SESSION)) {
 
             <br>
             <input type="submit" id="button" onclick="validoInputSignup()"
-                class="btn btn-primary deep-purple btn-block " value="Dergo">
+              name="regjistrohu"  class="btn btn-primary deep-purple btn-block " value="Dergo">
         </form>
+        <?php include_once '../controller/registerCont.php';?> 
         <p id="parag1"><b>Keni llogari?</b><a href="login.php"> Kycuni ketu</a></p>
     </div>
 

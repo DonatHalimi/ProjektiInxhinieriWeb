@@ -1,6 +1,6 @@
 <?php
 include '../database/dbConnect.php';
-
+session_start();
 class userRep
     {
     private $connection;
@@ -17,18 +17,35 @@ class userRep
         {
         $conn = $this->connection;
 
-        $id = $perdoruesi->getId();
-        $emri = $perdoruesi->getEmri();
-        $mbiemri = $perdoruesi->getMbiemri();
-        $email = $perdoruesi->getEmail();
-        $password = $perdoruesi->getPassword();
-        $roli= $perdoruesi->getRoli();
+       
+        $emri = $perdoruesi->getRegisterPerdoruesiEmri();
+        $mbiemri = $perdoruesi->getRegisterPerdoruesiMbiemri();
+        $email = $perdoruesi->getRegisterPerdoruesiEmail();
+        $password = $perdoruesi->getRegisterPerdoruesiPassword();
+        
 
-        $sql = "INSERT INTO perdoruesit (id,emri,mbiemri,email,password,roli) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO perdoruesit (emri,mbiemri,email,password,roli) VALUES (?,?,?,?,?,?)";
 
         $statement = $conn->prepare($sql);
-        $statement->execute([$id, $emri, $mbiemri, $email, $password,$roli]);
-        echo "<script> alert('User eshte insertuar me sukses!') </script>";
+        $statement->execute([$emri, $mbiemri, $email, $password,2]);
+        //Insertimi i 2 adminave
+        $statement->execute(['Mal','Mikullovci','malmikullovci@gmail.com','Ubtubt123',1]); 
+        $statement->execute(['Donat','Halimi','donat.halimi03@gmail.com','Ubtubt1234',1]); 
+
+        echo "<script> alert('User' $emri eshte insertuar me sukses!') </script>";
+        }
+
+        function readPerdoruesi($loginPerdoruesi)
+        {
+            $databaseConnection = $this->connection;
+            $email = $loginPerdoruesi->getLoginPerdoruesiEmail();
+            $password = $loginPerdoruesi->getLoginPerdoruesiPassword();
+    
+            $sql = "SELECT * FROM perdoruesit WHERE email='$email'";
+    
+            $statement = $databaseConnection->query($sql);
+            $perdoruesi = $statement->fetch();
+            return $perdoruesi;
         }
 
     //Metoda per shfaqjen e te dhenave nga DBH
@@ -56,17 +73,16 @@ class userRep
 
 
     //Metoda per update te dhenave 
-    function perditesoUser($id, $emri, $mbiemri, $email, $password)
+    function perditesoUser($id, $emri, $mbiemri, $email, $password,$roli)
         {
         $conn = $this->connection;
 
-        $sql = "UPDATE perdoruesit SET emri=?,mbiemri=?,email=?,password=? where id=?";
+        $sql = "UPDATE perdoruesit SET emri=?,mbiemri=?,email=?,password=?,roli=? where id=?";
 
         $statement = $conn->prepare($sql);
 
-        echo "emri: " . $emri . "<br>";
-        echo "mbiemri: " . $mbiemri . "<br>";
-        $statement->execute([$emri, $mbiemri, $email, $password, $id]);
+
+        $statement->execute([$emri, $mbiemri, $email, $password,$roli, $id]);
         echo "<script> alert('User eshte perditesuar me sukses!') </script>";
         }
 
@@ -82,62 +98,5 @@ class userRep
         echo "<script> alert('User eshte fshire me sukses!') </script>";
         }
 
-    function kontrolloUser($perdoruesi, $authorizedAdminEmails)
-    {
-    if ($perdoruesi && password_verify($_POST['password'], $perdoruesi->getPassword())) {
-        if (in_array($perdoruesi->getEmail(), $authorizedAdminEmails)) {
-            $_SESSION['roli'] = 'admin';
-            header('Location: dashboard.php');
-            exit();
-            } else {
-            $_SESSION['roli'] = 'user';
-            header('Location: index.php');
-            exit();
-            }
-        } else {
-        echo "Kredencialet e hyrjes nuk jane te sakta!";
-        }
-
-        if (isset($_POST['loginBtn'])) {
-            if (empty($_POST['email']) || empty($_POST['password'])) {
-                echo "Ju lutem mbushni te gjitha fushat!";
-                } else {
-                $email = $_POST['email'];
-                $password = $_POST['password'];
-        
-                $userRep = new userRep();
-                $perdoruesi = $userRep->login($email, $password);
-        
-                kontrolloUser($perdoruesi, $authorizedAdminEmails);
-                }
-            }
-    }
-    public function login($email, $password)
-        {
-        $query = "SELECT * FROM perdoruesi WHERE email = ?";
-
-        $stmt = $this->connection->prepare($query);
-
-        $stmt->bindParam(1, $email);
-
-        $stmt->execute();
-
-        if ($stmt->rowCount() == 1) {
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
-            $hashed_password = $row['password'];
-            if (password_verify($password, $hashed_password)) {
-                $perdoruesi = new perdoruesi(
-                    $row['id'],
-                    $row['emri'],
-                    $row['mbiemri'],
-                    $row['email'],
-                    $row['password'],
-                    $row['roli']
-                );
-                return $perdoruesi;
-                }
-            }
-        return null;
-        }
     }
 ?>
