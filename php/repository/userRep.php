@@ -23,14 +23,13 @@ class userRep
         $email = $perdoruesi->getRegisterPerdoruesiEmail();
         $password = $perdoruesi->getRegisterPerdoruesiPassword();
 
-
-        $sql = "INSERT INTO perdoruesit (emri,mbiemri,email,password,roli) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO perdoruesit (emri,mbiemri,email,password,roli) VALUES (?,?,?,?,?)";
 
         $statement = $conn->prepare($sql);
         $statement->execute([$emri, $mbiemri, $email, $password, 2]);
         //Insertimi i 2 adminave
-        $statement->execute([1, 'Mal', 'Mikullovci', 'malmikullovci@gmail.com', 'Ubtubt123', 1]);
-        $statement->execute([1, 'Donat', 'Halimi', 'donat.halimi03@gmail.com', 'Ubtubt1234', 1]);
+        $statement->execute(['Mal', 'Mikullovci', 'malmikullovci@gmail.com', 'Ubtubt123', 1]);
+        $statement->execute(['Donat', 'Halimi', 'donat.halimi03@gmail.com', 'Ubtubt1234', 1]);
 
         echo "<script> alert('User' $emri eshte insertuar me sukses!') </script>";
         }
@@ -77,7 +76,7 @@ class userRep
         {
         $conn = $this->connection;
 
-        $sql = "UPDATE perdoruesit SET emri=?,mbiemri=?,email=?,password=?,roli=? where id=?";
+        $sql = "UPDATE perdoruesit SET emri=?,mbiemri=?,email=?,password=?, roli=? where id=?";
 
         $statement = $conn->prepare($sql);
 

@@ -23,17 +23,17 @@ include_once '../models/LoginPerdoruesi.php';
                 header("Location: index.php");
             }
         }
-        else
-        {
-            $alert = "<script>alert('Invalid email and password!');</script>";
-            echo $alert;
-            echo "<script>
-            if ( window.history.replaceState ) {
-                window.history.replaceState( null, null, window.location.href = 'login.php' );
-            }
-        </script>";
+        // else
+        // {
+        //     $alert = "<script>alert('Invalid email and password!');</script>";
+        //     echo $alert;
+        //     echo "<script>
+        //     if ( window.history.replaceState ) {
+        //         window.history.replaceState( null, null, window.location.href = 'login.php' );
+        //     }
+        // </script>";
         
-        }
+        // }
     }
 
 
