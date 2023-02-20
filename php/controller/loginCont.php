@@ -14,7 +14,7 @@ include_once '../models/LoginPerdoruesi.php';
 
         if($user["email"] == $email && $user["password"] == $password)
         {
-            if($user["Role"] == 1)
+            if($user["roli"] == 1)
             {
                 header("Location: dashboard.php");
             }
