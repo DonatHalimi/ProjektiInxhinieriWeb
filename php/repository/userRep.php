@@ -40,7 +40,7 @@ class userRep
         $email = $loginPerdoruesi->getLoginPerdoruesiEmail();
         $password = $loginPerdoruesi->getLoginPerdoruesiPassword();
 
-        $sql = "SELECT * FROM perdoruesit WHERE email='$email'";
+        $sql = "SELECT * FROM perdoruesit WHERE email='$email' password = '$password'";
 
         $statement = $databaseConnection->query($sql);
         $perdoruesi = $statement->fetch();
