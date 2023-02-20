@@ -17,7 +17,6 @@ class userRep
         {
         $conn = $this->connection;
 
-
         $emri = $perdoruesi->getRegisterPerdoruesiEmri();
         $mbiemri = $perdoruesi->getRegisterPerdoruesiMbiemri();
         $email = $perdoruesi->getRegisterPerdoruesiEmail();
