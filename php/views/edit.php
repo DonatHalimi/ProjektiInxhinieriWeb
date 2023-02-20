@@ -15,6 +15,7 @@ $user = $userRep->getUserById($userId);
     <input type="text" name="mbiemri" value="<?= $user['mbiemri'] ?>"> <br><br>
     <input type="text" name="email" value="<?= $user['email'] ?>"> <br><br>
     <input type="text" name="password" value="<?= $user['password'] ?>"> <br><br>
+    <input type="text" name="roli" value="<?= $user['roli'] ?>"> <br><br>
 
     <input type="submit" name="save" value="save"> <br><br>
 </form>
@@ -26,8 +27,9 @@ if (isset($_POST['save'])) {
     $mbiemri = $_POST['mbiemri'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $roli = $_POST['roli'];
 
-    $userRep->perditesoUser($id, $emri, $mbiemri, $email, $password);
+    $userRep->perditesoUser($id, $emri, $mbiemri, $email, $password, $roli);
     header("location:dashboard.php");
     }
 

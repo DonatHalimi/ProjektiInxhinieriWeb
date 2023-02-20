@@ -16,6 +16,7 @@
             <th>Mbiemri</th>
             <th>Email</th>
             <th>Password</th>
+            <th>Roli</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -32,6 +33,7 @@
                <td>$perdoruesi[mbiemri]</td>
                <td>$perdoruesi[email]</td>
                <td>$perdoruesi[password]</td>
+               <td>$perdoruesi[roli]</td>               
                <td><a href='edit.php?id=$perdoruesi[id]'>Edit</a></td>
                <td><a href='delete.php?id=$perdoruesi[id]'>Delete</a></td>
            </tr>
