@@ -9,6 +9,10 @@
 </head>
 
 <body>
+
+    <h1>Admin Dashboard</h1>
+    <br>
+    <br>
     <table border="1">
         <tr>
             <th>ID</th>
