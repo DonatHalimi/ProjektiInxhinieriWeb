@@ -26,9 +26,9 @@
             <div class="menu-container">
                 <ul class="menu-list">
                     <li class="menu-list-item active"><a href="index.php" class="linku">Home</a></li>
-                    <li class="menu-list-item"><a href="detajet.html" class="linku">Filmat</a></li>
-                    <li class="menu-list-item"><a href="arkivi.html" class="linku">Arkivi</a></li>
-                    <li class="menu-list-item"><a href="rrethnesh.html" class="linku">Rreth Nesh</a></li>
+                    <li class="menu-list-item"><a href="detajet.php" class="linku">Filmat</a></li>
+                    <li class="menu-list-item"><a href="arkivi.php" class="linku">Arkivi</a></li>
+                    <li class="menu-list-item"><a href="rrethnesh.php" class="linku">Rreth Nesh</a></li>
                     <li class="menu-list-item"><a href="index.php#footer" class="linku">Contact</a></li>
                     <li><a href="login.php" class="linku" id="login-a">Log in</a></li>
                 </ul>
