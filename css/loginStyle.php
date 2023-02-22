@@ -1,24 +1,31 @@
+<?php
+header('Content-type: text/css; charset:UTF-8');
+?>
 * {
     margin: 0;
 }
 
 body {
+    background-image: url('../img/kinemaja.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
 }
 
-/* Ekranet extra te medha (Desktops large) */
 @media only screen and (min-width: 1200px) {
+
     body {
         font-size: 18px;
+        background-size: 120%;
     }
 
     .navbar {
-        position: sticky;
+        position: fixed;
         width: 100%;
         height: 80px;
         background-color: rgb(26, 25, 25);
+        top: 0;
     }
 
     .navbar-container {
@@ -55,7 +62,7 @@ body {
     .menu-list {
         display: flex;
         list-style: none;
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .menu-list-item {
@@ -73,66 +80,27 @@ body {
         padding-left: 617px;
     }
 
-    .movie-list-item-photo {
-        position: sticky;
-        margin-top: 20px;
-        left: 20px;
-        height: 400px;
-        border-radius: 15px;
+    #login-card {
+        width: 400px;
+        border-radius: 30px;
+        margin: 150px auto;
+        height: 350px;
+        background-color: white
     }
 
-    .movie-list {
-        display: flex;
-        flex-direction: row;
-        padding-left: 15px;
+    #email {
+        background-color: rgb(235, 240, 252);
+        border-color: #ebf0fc;
+        color: gray;
     }
 
-    #movie-description-batman {
-        font-family: "Sen", sans-serif;
-        position: absolute;
-        top: 110px;
-        left: 290px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
-    }
-
-    #movie-description-black-adam {
-        font-family: "Sen", sans-serif;
-        padding-top: 20px;
-        left: 300px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
-    }
-
-    #movie-description-nope {
-        font-family: "Sen", sans-serif;
-        padding-top: 20px;
-        left: 300px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
-    }
-
-    #movie-description-wakanda-forever {
-        font-family: "Sen", sans-serif;
-        padding-top: 20px;
-        left: 500px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
-    }
-
-    #movie-description-thor {
-        font-family: "Sen", sans-serif;
-        padding-top: 20px;
-        left: 300px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
+    #password {
+        background-color: rgb(235, 240, 252);
+        border-color: #ebf0fc;
+        color: gray;
     }
 }
+
 
 html {
     scroll-behavior: smooth;

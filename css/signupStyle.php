@@ -1,28 +1,24 @@
-* {
-    margin: 0;
-}
-
+<?php
+header('Content-type: text/css; charset:UTF-8');
+?>
 body {
     background-image: url('../img/kinemaja.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Roboto', sans-serif;
 }
 
+/* Ekranet extra te medha (Desktops large) */
 @media only screen and (min-width: 1200px) {
-
     body {
         font-size: 18px;
-        background-size: 120%;
     }
 
     .navbar {
-        position: fixed;
+        position: sticky;
         width: 100%;
         height: 80px;
         background-color: rgb(26, 25, 25);
-        top: 0;
     }
 
     .navbar-container {
@@ -38,7 +34,8 @@ body {
         flex: 1;
         padding: 0;
         margin: 0;
-        margin-left: -50px;
+        margin-left: -60px;
+        text-decoration: none;
     }
 
     #logo {
@@ -66,6 +63,17 @@ body {
         margin-right: 50px;
     }
 
+    .movie-list-description1 {
+        position: relative;
+        left: 30px;
+        display: flex;
+        position: relative;
+        left: 30px;
+        padding-left: 30px;
+        height: 300px;
+        float: left;
+    }
+
     .linku {
         text-decoration: none;
         color: white;
@@ -74,30 +82,84 @@ body {
     #login-a {
         margin-left: 300px;
         margin-top: 3px;
-        padding-left: 617px;
+        padding-left: 610px;
     }
 
-    #login-card {
-        width: 400px;
-        border-radius: 30px;
+    .signup-box {
+        width: 350px;
+        height: 660px;
+        margin: auto;
+        background-color: white;
+        border-radius: 3px;
         margin: 150px auto;
-        height: 350px;
-        background-color: white
+        border-radius: 30px;
     }
 
-    #email {
+    h1 {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    form {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    form label {
+        display: flex;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    form input {
+        width: 100%;
+        padding: 7px;
+        border-color: #ebf0fc;
+        border-radius: 6px;
+        outline: none;
+        background-color: rgb(235, 240, 252);
+
+    }
+
+    #emri {
         background-color: rgb(235, 240, 252);
         border-color: #ebf0fc;
         color: gray;
     }
 
-    #password {
+    #mbiemri {
         background-color: rgb(235, 240, 252);
         border-color: #ebf0fc;
         color: gray;
+    }
+
+    #emailS {
+        background-color: rgb(235, 240, 252);
+        border-color: #ebf0fc;
+        color: gray;
+    }
+
+    #passwordS {
+        background-color: rgb(235, 240, 252);
+        border-color: #ebf0fc;
+        color: gray;
+    }
+
+    #passwordK {
+        background-color: rgb(235, 240, 252);
+        border-color: #ebf0fc;
+        color: gray;
+    }
+
+    #button {
+        margin-top: 10px;
+    }
+
+    #parag1 {
+        padding-top: 10px;
+        text-align: center;
     }
 }
-
 
 html {
     scroll-behavior: smooth;

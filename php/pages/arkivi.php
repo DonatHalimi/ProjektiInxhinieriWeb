@@ -9,7 +9,7 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../css/arkivi.css">
+    <link rel="stylesheet" href="../../css/arkiviStyle.php">
 
     <title>Arkivi</title>
 </head>

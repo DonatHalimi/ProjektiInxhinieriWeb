@@ -13,7 +13,7 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../css/rrethnesh.css">
+    <link rel="stylesheet" href="../../css/rrethneshStyle.php">
 
     <title>Rreth Nesh</title>
 </head>

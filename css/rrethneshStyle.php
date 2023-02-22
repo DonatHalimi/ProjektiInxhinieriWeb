@@ -1,14 +1,13 @@
-* {
-    margin: 0;
-}
-
+<?php
+header('Content-type: text/css; charset:UTF-8');
+?>
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
+    background-image: url('../img/red-cinema.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Ekranet extra te medha (Desktops large) */
 @media only screen and (min-width: 1200px) {
     body {
         font-size: 18px;
@@ -16,11 +15,11 @@ body {
 
     .navbar {
         position: sticky;
-        max-width: 100%;
+        width: 100%;
         height: 80px;
         background-color: rgb(26, 25, 25);
     }
-    
+
     .navbar-container {
         display: flex;
         align-items: center;
@@ -29,14 +28,14 @@ body {
         color: white;
         font-family: "Sen", sans-serif;
     }
-    
+
     .logo-container {
         flex: 1;
         padding: 0;
         margin: 0;
-        margin-left: -50px;
+        margin-left: -70px;
     }
-    
+
     #logo {
         margin-top: 6px;
         max-width: none;
@@ -45,72 +44,66 @@ body {
         width: 270px;
         height: 150px;
     }
-    
+
     .menu-container {
         flex: 6;
         margin-left: -30px;
         margin-bottom: 35px;
     }
-    
+
     .menu-list {
         display: flex;
         list-style: none;
-        margin-top: 40px;
+        margin-top: 60px;
+        margin-left: 6px;
+        text-decoration: none;
     }
-    
+
     .menu-list-item {
         margin-right: 50px;
     }
-    
+
     .linku {
         text-decoration: none;
         color: white;
     }
-    
+
     #login-a {
         margin-left: 300px;
         margin-top: 3px;
         padding-left: 617px;
     }
-    
+
     .movie-list-description1 {
         position: relative;
         left: 30px;
         display: flex;
         position: relative;
         left: 30px;
-        padding-left: 30px;
+        padding-left: 70px;
         height: 300px;
         float: left;
     }
-    
-    .movie-list {
-        margin: 0;
-        align-items: center;
+
+    .rreth-nesh {
+        margin-top: 100px;
+        color: white;
     }
-    
-    .movie-list-item {
-        display: flex;
-        position: relative;
-        left: 30px;
-        margin-top: 70px;
-        padding-left: 30px;
-        height: 300px;
-        float: left;
+
+    .historiku {
+        font-weight: bold;
+        text-align: justify;
     }
-    
-    .movie-list-item-photo {
-        height: 295px;
-        align-self: center;
-        position: relative;
-        border-radius: 10px;
-        margin-right: 32px;
+
+    .teksti {
+        width: 95%;
     }
-    
-    .covertxt {
-        margin-top: 3px;
-        text-align: center;
-        margin-right: 30px;
+
+    .rrethnesh {
+        font-family: "Sen", sans-serif;
+        text-align: justify;
+        padding: 30px;
+        margin-left: 30px;
     }
 }
 

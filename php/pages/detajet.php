@@ -9,7 +9,7 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../css/detajet.css">
+    <link rel="stylesheet" href="../../css/detajetStyle.php">
 
     <title>Detajet</title>
 </head>

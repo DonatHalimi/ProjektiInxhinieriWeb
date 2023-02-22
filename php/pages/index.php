@@ -15,7 +15,7 @@
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="login.php">
     <link rel="stylesheet" href="signup.php">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/indexStyle.php">
 </head>
 
 <body>
