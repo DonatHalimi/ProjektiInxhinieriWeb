@@ -5,7 +5,7 @@ include_once '../models/RegisterRezervimin.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['rezervo'])) {
         $data = $_POST['data'];
-        $orari = $_POST['ora'];
+        $orari = $_POST['orari'];
         $persona = $_POST['persona'];
         $filmi = $_POST['filmi'];
         $qyteti = $_POST['qyteti'];
@@ -29,13 +29,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="box">
             <p>Ne cfare orari doni ta shikoni?</p>
-            <select name="ora" class="input" type="time" id="orari" required>
+            <select name="orari" class="input" type="time" id="orari" required>
                 <option disabled selected value>Zgjedhni orarin</option>
-                <option value="16:00">16:00</option>
-                <option value="18:30">18:30</option>
-                <option value="19:00">19:00</option>
-                <option value="20:30">20:30</option>
-                <option value="22:00">22:00</option>
+                <option value="16:00:00">16:00</option>
+                <option value="18:30:00">18:30</option>
+                <option value="19:00:00">19:00</option>
+                <option value="20:30:00">20:30</option>
+                <option value="22:00:00">22:00</option>
             </select>
         </div>
         <div class="box">

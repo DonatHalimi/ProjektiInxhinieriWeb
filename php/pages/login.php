@@ -38,11 +38,9 @@
 
     <div id="login-card" class="card">
         <div class="card-body">
-           
-
                 <h2 class="text center"><b>Log in</b></h2>
                 <br>
-                <form class="form-group" method="post">
+                <form class="form-group" method="POST">
                     <label><b>Email</b></label>
                     <input type="email" class="form-control" id="email" placeholder="Shkruani email" name="email" required>
             

@@ -47,7 +47,7 @@
     </div>
 
     <section class="reservation" id="reservation">
-        <form action="">
+        <form action="" method="POST">
             <h3>Rezervoni</h3>
             <div class="flex">
                 <div class="box">
@@ -56,13 +56,13 @@
                 </div>
                 <div class="box">
                     <p>Ne cfare orari doni ta shikoni?</p>
-                    <select name="ora" class="input" type="time" id="orari" required>
+                    <select name="orari" class="input" type="time" id="orari" required>
                         <option disabled selected value>Zgjedhni orarin</option>
-                        <option value="16:00">16:00</option>
-                        <option value="18:30">18:30</option>
-                        <option value="19:00">19:00</option>
-                        <option value="20:30">20:30</option>
-                        <option value="22:00">22:00</option>
+                        <option value="16:00:00">16:00</option>
+                        <option value="18:30:00">18:30</option>
+                        <option value="19:00:00">19:00</option>
+                        <option value="20:30:00">20:30</option>
+                        <option value="22:00:00">22:00</option>
                     </select>
                 </div>
                 <div class="box">
@@ -83,7 +83,7 @@
                         <option value="Batman (2022)">Batman (2022)</option>
                         <option value="Black Adam (2022)">Black Adam (2022)</option>
                         <option value="Nope (2022)">Nope (2022)</option>
-                        <option value="Wakanda Forever(2022)">Wakanda Forever (2022)</option>
+                        <option value="Wakanda Forever (2022)">Wakanda Forever (2022)</option>
                         <option value="Thor: Love and Thunder (2022)">Thor: Love and Thunder (2022)
                         </option>
                     </select>
@@ -99,7 +99,7 @@
                     </select>
                 </div>
             </div>
-            <input type="submit" value="Shikoni a ka vende te lira" onclick="validoInputRezervo()" name="rezervo"
+            <input type="submit" value="Rezervo" onclick="validoInputRezervo()" name="rezervo"
                 class="buton">
         </form>
         <?php include_once '../controller/rezCont.php'; ?>

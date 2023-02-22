@@ -43,25 +43,27 @@
         <form class="form-group" method="post">
 
             <label><b>Emri</b></label>
-            <input id="emri" name="emri"type="text" placeholder="Shkruani emrin" class="form-control" required>
+            <input id="emri" name="emri" type="text" placeholder="Shkruani emrin" class="form-control" required>
 
             <label><b>Mbiemri</b></label>
-            <input id="mbiemri" name="mbiemri" type="text" placeholder="Shkruani mbiemrin" class="form-control" required>
+            <input id="mbiemri" name="mbiemri" type="text" placeholder="Shkruani mbiemrin" class="form-control"
+                required>
 
             <label><b>Email</b></label>
             <input id="emailS" name="email" type="email" placeholder="Shkruani email" class="form-control" required>
 
             <label><b>Password</b></label>
-            <input id="passwordS" name="password" type="password" placeholder="Shkruani passwordin" class="form-control" required>
+            <input id="passwordS" name="password" type="password" placeholder="Shkruani passwordin" class="form-control"
+                required>
 
             <label><b>Konfirmo Password</b></label>
-            <input id="passwordK"  type="password" placeholder="Konfirmoni passwordin" class="form-control" required>
+            <input id="passwordK" type="password" placeholder="Konfirmoni passwordin" class="form-control" required>
 
             <br>
-            <input type="submit" id="button" onclick="validoInputSignup()"
-              name="regjistrohu"  class="btn btn-primary deep-purple btn-block " value="Dergo">
+            <input type="submit" id="button" onclick="validoInputSignup()" name="regjistrohu"
+                class="btn btn-primary deep-purple btn-block " value="Dergo">
         </form>
-        <?php include_once '../controller/registerCont.php';?> 
+        <?php include_once '../controller/registerCont.php'; ?>
         <p id="parag1"><b>Keni llogari?</b><a href="login.php"> Kycuni ketu</a></p>
     </div>
 
