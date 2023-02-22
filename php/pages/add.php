@@ -1,6 +1,6 @@
 <?php
 include_once '../repository/userRep.php';
-include_once '../models/RegisterPerdoruesin.php';
+include_once '../models/RegisterPerdoruesi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['regjistrohu'])) {

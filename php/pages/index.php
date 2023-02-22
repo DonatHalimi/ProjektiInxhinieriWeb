@@ -52,11 +52,11 @@
             <div class="flex">
                 <div class="box">
                     <p>Data kur doni ta shikoni</p>
-                    <input type="date" name="data" id="dataZ" class="input" required>
+                    <input type="date" name="data" class="input" id="dataZ" required>
                 </div>
                 <div class="box">
                     <p>Ne cfare orari doni ta shikoni?</p>
-                    <select name="orari" class="input" type="time" id="orari" required>
+                    <select type="time" name="orari" class="input" id="orari" required>
                         <option disabled selected value>Zgjedhni orarin</option>
                         <option value="16:00:00">16:00</option>
                         <option value="18:30:00">18:30</option>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="box">
                     <p>Sa persona jeni?</p>
-                    <select name="persona" class="input" id="persona" required>
+                    <select type="text" name="persona" class="input" id="persona" required>
                         <option disabled selected value>Zgjedhni numrin e personave</option>
                         <option value="1">1 Person</option>
                         <option value="2">2 Persona</option>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="box">
                     <p>Cilin film doni ta shikoni?</p>
-                    <select name="filmi" class="input" id="filmZ" required>
+                    <select type="text" name="filmi" class="input" id="filmZ" required>
                         <option disabled selected value>Zgjedhni nje film</option>
                         <option value="Batman (2022)">Batman (2022)</option>
                         <option value="Black Adam (2022)">Black Adam (2022)</option>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="box">
                     <p>Ne cilin qytet?</p>
-                    <select name="qyteti" class="input" id="qytet" required>
+                    <select type="text" name="qyteti" class="input" id="qytet" required>
                         <option disabled selected value>Zgjedhni nje qytet</option>
                         <option value="Mitrovice">Mitrovice</option>
                         <option value="Prishtine">Prishtine</option>
@@ -99,8 +99,7 @@
                     </select>
                 </div>
             </div>
-            <input type="submit" value="Rezervo" onclick="validoInputRezervo()" name="rezervo"
-                class="buton">
+            <input type="submit" class="buton" value="Rezervo" onclick="validoInputRezervo()" name="rezervo">
         </form>
         <?php include_once '../controller/rezCont.php'; ?>
     </section>

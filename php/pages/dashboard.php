@@ -49,6 +49,9 @@
     </table>
     <br>
     <br>
+    <div class="header">
+        <h1>Rezervimi</h1>
+    </div>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -83,6 +86,40 @@
             }
         ?>
     </table>
+    <br>
+    <br>
+    <div class="header">
+        <h1>Filmat</h1>
+    </div>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Emri</th>
+            <th>Cover</th>
+            <th>Detajet</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th><a href='addFilmiMain.php?id=$filmatmain[id]'>Add</a></th>
+        </tr>
+        <?php
+        include_once '../repository/filmaRep.php';
+        $userRep = new filmaRep();
+        $filmat = $userRep->getAllFilmatMain();
+        foreach ($filmat as $filmatmain) {
+            echo
+                "
+           <tr>
+               <td>$filmatmain[id]</td>
+               <td>$filmatmain[emri]</td>
+               <td><img src='../../img/$filmatmain[cover]' height = 355px width = 240px > </td>
+               <td>$filmatmain[detajet]</td> 
+               <td><a href='editFilmiMain.php?id=$filmatmain[id]'>Edit</a></td>
+               <td><a href='deleteFilmiMain.php?id=$filmatmain[id]'>Delete</a></td>
+               <td><a href='addFilmiMain.php?id=$filmatmain[id]'>Add</a></td>
+           </tr>
+           ";
+            }
+        ?>
 </body>
 
 </html>

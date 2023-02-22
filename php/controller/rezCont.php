@@ -10,6 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $filmi = $_POST['filmi'];
         $qyteti = $_POST['qyteti'];
 
+        header("Location:dashboardUser.php");
+
         $registerRezervimin = new RegisterRezervimin($data, $orari, $persona, $filmi, $qyteti);
         $rezRep = new rezRep();
 
