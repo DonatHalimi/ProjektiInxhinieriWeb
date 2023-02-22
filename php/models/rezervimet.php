@@ -18,8 +18,6 @@ class rezervimet{
         $this->qyteti = $qyteti;
     }
 
-
-
     function getId()
     {
         return $this->id;

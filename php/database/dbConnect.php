@@ -1,27 +1,25 @@
 <?php
 
-class dbConnect
+class dbConnection
     {
-    private $conn = '';
-    private $host = 'localhost';
-    private $dbname = 'perdoruesit';
-    private $username = 'root';
-    private $password = '';
+    private $servername = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $database = "projekti";
+
 
     function startConnection()
         {
+
         try {
-            $this->conn = new PDO(
-                "mysql:host=$this->host;dbname=$this->dbname", $this->username, $this->password,
-                [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]
-            );
-            } catch (PDOException $pdoe) {
-            die("Nuk mund të lidhej me bazën e të dhënave {$this->dbname} :" . $pdoe->getMessage());
+            $conn = new PDO("mysql:host=$this->servername;dbname=$this->database", $this->username, $this->password);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return $conn;
+            } catch (PDOException $e) {
+            echo "Nuk mund te lidhej me databazen" . $e->getMessage();
+            return null;
             }
-
-        return $this->conn;
         }
-
-
     }
+
 ?>

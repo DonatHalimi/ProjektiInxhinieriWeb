@@ -1,5 +1,4 @@
 <?php
-
 include_once '../repository/rezRep.php';
 $id = $_GET['id'];
 $userRepository = new rezRep();

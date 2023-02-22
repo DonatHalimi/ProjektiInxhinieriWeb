@@ -19,6 +19,7 @@
             <th>Roli</th>
             <th>Edit</th>
             <th>Delete</th>
+            <th>Add</th>
         </tr>
         <?php
         include_once '../repository/userRep.php';
@@ -33,10 +34,11 @@
                <td>$perdoruesi[mbiemri]</td>
                <td>$perdoruesi[email]</td>
                <td>$perdoruesi[password]</td>
-               <td>$perdoruesi[roli]</td>               
-               <td><a href='../views/edit.php?id=$perdoruesi[id]'>Edit</a></td>
+               <td>$perdoruesi[roli]</td>           
+               <td><a href='edit.php?id=$perdoruesi[id]'>Edit</a></td>
                <td><a href='delete.php?id=$perdoruesi[id]'>Delete</a></td>
-           </tr>
+               <td><a href='add.php?id=$perdoruesi[id]'>Add</a></td>
+               </tr>
            ";
             }
         ?>
@@ -53,6 +55,7 @@
             <th>Qyteti</th>
             <th>Edit</th>
             <th>Delete</th>
+            <th>Add</th>
         </tr>
         <?php
         include_once '../repository/rezRep.php';
@@ -68,8 +71,9 @@
                <td>$rezervimet[persona]</td>
                <td>$rezervimet[filmi]</td>
                <td>$rezervimet[qyteti]</td>
-               <td><a href='edit.php?id=$rezervimet[id]'>Edit</a></td>
-               <td><a href='delete.php?id=$rezervimet[id]'>Delete</a></td>
+               <td><a href='editRez.php?id=$rezervimet[id]'>Edit</a></td>
+               <td><a href='deleteRez.php?id=$rezervimet[id]'>Delete</a></td>
+               <td><a href='addRez.php?id=$rezervimet[id]'>Add</a></td>
            </tr>
            ";
             }

@@ -43,9 +43,9 @@
         <button id="prevBtn"></button>
         <img src="" id="foto">
         <button id="nextBtn"></button>
-      </div>
     </div>
-    
+    </div>
+
     <section class="reservation" id="reservation">
         <form action="">
             <h3>Rezervoni</h3>
@@ -99,9 +99,10 @@
                     </select>
                 </div>
             </div>
-            <input type="submit" value="Shikoni a ka vende te lira" onclick="validoInputRezervo()" name="shikoni"
+            <input type="submit" value="Shikoni a ka vende te lira" onclick="validoInputRezervo()" name="rezervo"
                 class="buton">
         </form>
+        <?php include_once '../controller/rezCont.php'; ?>
     </section>
 
     <footer id="footer">

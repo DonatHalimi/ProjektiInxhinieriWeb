@@ -1,5 +1,5 @@
 <?php
-include '../database/dbConnect.php';
+include_once '../database/dbConnect.php';
 session_start();
 class userRep
     {
@@ -7,7 +7,7 @@ class userRep
 
     function __construct()
         {
-        $conn = new dbConnect;
+        $conn = new dbConnection;
         $this->connection = $conn->startConnection();
         }
 
@@ -27,8 +27,8 @@ class userRep
         $statement = $conn->prepare($sql);
         $statement->execute([$emri, $mbiemri, $email, $password, 2]);
         //Insertimi i 2 adminave
-        // $statement->execute(['Mal', 'Mikullovci', 'malmikullovci@gmail.com', 'Ubtubt123', 1]);
-        // $statement->execute(['Donat', 'Halimi', 'donat.halimi03@gmail.com', 'Ubtubt1234', 1]);
+        // $statement->execute([1, 'Mal', 'Mikullovci', 'malmikullovci@gmail.com', 'Ubtubt123', 1]);
+        // $statement->execute([2, 'Donat', 'Halimi', 'donat.halimi03@gmail.com', 'Ubtubt1234', 1]);
 
         echo "<script> alert('User {$emri} eshte insertuar me sukses!') </script>";
         }
