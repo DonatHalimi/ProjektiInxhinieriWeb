@@ -19,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/addFilmiStyle.php">
@@ -33,25 +34,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="addfilmi.css">
 </head>
-<body>
-    
 
-<div class="addF">
-<form action="" method="POST">
-    <label><b>Emri</b></label>
-    <input id="emri" name="emri" type="text" placeholder="Shkruani emrin e filmit" class="form-control" required>
-    <br>
-    <label><b>Inserto Cover</b></label>
-    <input id="cover" name="cover" type="file" class="form-control" required>
-    <br>
-    <label><b>Detajet</b></label>
-    <input id="detajet" name="detajet" type="text" placeholder="Shkruani detajet e filmit" class="form-control"
-        required>
-    <br>
-    <br>
-    <input type="submit" id="button" name="save" class="btn btn-primary deep-purple btn-block" value="Shto">
-</form>
-</div>
+<body>
+
+
+    <div class="addF">
+        <form action="" method="POST">
+            <label><b>Emri</b></label>
+            <input id="emri" name="emri" type="text" placeholder="Shkruani emrin e filmit" class="form-control"
+                required>
+            <br>
+            <label><b>Inserto Cover</b></label>
+            <input id="cover" name="cover" type="file" class="form-control" required>
+            <br>
+            <label><b>Detajet</b></label>
+            <input id="detajet" name="detajet" type="text" placeholder="Shkruani detajet e filmit"
+                class="form-control textarea-style" required>
+
+            <input type="submit" id="button" name="save" class="btn btn-primary deep-purple btn-block" value="Shto">
+        </form>
+    </div>
 
 </body>
+
 </html>

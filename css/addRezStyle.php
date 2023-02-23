@@ -2,15 +2,15 @@
 header('Content-type: text/css; charset:UTF-8');
 ?>
 body{
-background-color: beige
+background-color: beige;
 font-family: sans-serif;
 }
 
-.flex{
+.flex {
 width: 350px;
 height: 530px;
 margin: auto;
-background-color: rgb(243, 243, 242);
+background-color: rgb(27, 160, 60);
 border-radius: 3px;
 margin: 150px auto;
 border-radius: 30px;
@@ -40,8 +40,8 @@ background-color: rgb(235, 240, 252);
 .buton {
 width: 100%;
 margin-top: 20px;
-background-color: rgb(0, 153, 255);
 outline: none;
 margin-left: 5px;
-border-color: rgb(243, 243, 242);
+background-color: rgb(52, 196, 148);
+border-color: rgb(27, 160, 60);
 }
