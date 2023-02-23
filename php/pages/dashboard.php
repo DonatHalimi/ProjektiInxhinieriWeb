@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<link rel="stylesheet" href="../../css/dashboardStyle.php">
+    <link rel="stylesheet" href="../../css/dashboardStyle.php">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +21,7 @@
     <br>
     <br>
     <h2>Perdoruesit</h2>
-    <table class="table" border="1">
+    <table class="table">
         <tr>
             <th>ID</th>
             <th>Emri</th>
@@ -60,7 +60,7 @@
     <div class="header">
         <h2>Rezervimi</h2>
     </div>
-    <table  class="table" border="1">
+    <table class="table">
         <tr>
             <th>ID</th>
             <th>Data</th>
@@ -99,7 +99,7 @@
     <div class="header">
         <h2>Filmat</h2>
     </div>
-    <table  class="table" border="1">
+    <table class="table">
         <tr>
             <th>ID</th>
             <th>Emri</th>
@@ -124,6 +124,39 @@
                <td><a href='editFilmiMain.php?id=$filmatmain[id]'><i class='fa-solid fa-pen-to-square'></a></td>
                <td><a href='deleteFilmiMain.php?id=$filmatmain[id]'><i class='fa-sharp fa-solid fa-trash'></a></td>
                <td><a href='addFilmiMain.php?id=$filmatmain[id]'><i class='fa-solid fa-plus'></i></a></td>
+           </tr>
+           ";
+            }
+        ?>
+        <br>
+        <br>
+    </table>
+    <div class="header">
+        <h2>Arkivi</h2>
+    </div>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Emri</th>
+            <th>Cover</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th><a href='addFilmiArkivi.php?id=$filmatarkivi[id]'>Add</a></th>
+        </tr>
+        <?php
+        include_once '../repository/filmaArkiviRep.php';
+        $userRep = new filmaArkiviRep();
+        $filmat = $userRep->getAllFilmatArkivi();
+        foreach ($filmat as $filmatarkivi) {
+            echo
+                "
+           <tr>
+               <td>$filmatarkivi[id]</td>
+               <td>$filmatarkivi[emri]</td>
+               <td><img src='../../img/$filmatarkivi[cover]' height = 355px width = 240px > </td>
+               <td><a href='editFilmiArkivi.php?id=$filmatarkivi[id]'><i class='fa-solid fa-pen-to-square'></a></td>
+               <td><a href='deleteFilmiArkivi.php?id=$filmatarkivi[id]'><i class='fa-sharp fa-solid fa-trash'></a></td>
+               <td><a href='addFilmiArkivi.php?id=$filmatarkivi[id]'><i class='fa-solid fa-plus'></i></a></td>
            </tr>
            ";
             }
