@@ -38,19 +38,20 @@
 
     <div id="login-card" class="card">
         <div class="card-body">
-                <h2 class="text center"><b>Log in</b></h2>
-                <br>
-                <form class="form-group" method="POST">
-                    <label><b>Email</b></label>
-                    <input type="email" class="form-control" id="email" placeholder="Shkruani email" name="email" required>
-            
-                    <label><b>Password</b></label>
-                    <input type="password" class="form-control" id="password" placeholder="Shkruani fjalekalimin"
-                        name="password" required>
-                
-                <button type="submit" id="button" name="login" class="btn btn-primary deep-purple btn-block " onclick="validoInput()">Dergo</button>
+            <h2 class="text center"><b>Log in</b></h2>
+            <br>
+            <form class="form-group" method="POST">
+                <label><b>Email</b></label>
+                <input type="email" class="form-control" id="email" placeholder="Shkruani email" name="email" required>
+
+                <label><b>Password</b></label>
+                <input type="password" class="form-control" id="password" placeholder="Shkruani fjalekalimin"
+                    name="password" required>
+
+                <button type="submit" id="button" name="login" class="btn btn-primary deep-purple btn-block "
+                    onclick="validoInput()">Dergo</button>
             </form>
-            <?php include_once '../controller/loginCont.php';?> 
+            <?php include_once '../controller/loginCont.php'; ?>
 
             <p><b>Nuk keni llogari?</b><a href="signup.php"> Regjistrohu</a></p>
 

@@ -11,6 +11,7 @@ $filmi = $filmaRep->getFilmatMainById($filmiId);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,10 +19,11 @@ $filmi = $filmaRep->getFilmatMainById($filmiId);
     <title>Document</title>
     <link rel="stylesheet" href="../../css/editStyle.php">
 </head>
+
 <body>
     <div class="addA">
         <form action="" method="POST">
-            <label>Id</label>
+            <label>ID</label>
             <input type="text" name="id" value="<?= $filmi['id'] ?>" readonly> <br><br>
             <label>Emri</label>
             <input type="text" name="emri" value="<?= $filmi['emri'] ?>"> <br><br>
@@ -29,12 +31,13 @@ $filmi = $filmaRep->getFilmatMainById($filmiId);
             <input type="text" name="cover" value="<?= $filmi['cover'] ?>"> <br><br>
             <label>Detajet</label>
             <input type="text" name="detajet" value="<?= $filmi['detajet'] ?>"> <br><br>
-        
+
             <input id="button" type="submit" name="save" value="save"> <br><br>
         </form>
-    </form>
+        </form>
     </div>
 </body>
+
 </html>
 
 <?php

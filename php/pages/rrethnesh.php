@@ -17,7 +17,7 @@
 
     <title>Rreth Nesh</title>
 </head>
-    
+
 <body>
     <div class="navbar">
         <div class="navbar-container">
