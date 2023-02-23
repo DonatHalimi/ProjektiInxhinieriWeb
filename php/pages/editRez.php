@@ -7,9 +7,19 @@ $rezRep = new rezRep();
 
 $rezervimet = $rezRep->getRezervimetById($rezId);
 ?>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/addRezStyle.php">
+    <title>Document</title>
+</head>
+<body>
+<div class="flex">
 <form method="POST">
-    <div class="flex">
+   
         <div class="box">
             <p>Data kur doni ta shikoni</p>
             <input type="date" name="data" value="<?= $rezervimet['data'] ?>" id="dataZ" class="input">
@@ -58,9 +68,13 @@ $rezervimet = $rezRep->getRezervimetById($rezId);
                 <option value="Prizren">Prizren</option>
             </select>
         </div>
-    </div>
+    
     <input type="submit" value="Ruaj" onclick="validoInputRezervo()" name="rezervo" class="buton">
 </form>
+</div>
+
+</body>
+</html>
 
 <?php
 if (isset($_POST['rezervo'])) {

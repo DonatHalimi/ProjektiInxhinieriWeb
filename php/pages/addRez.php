@@ -20,9 +20,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/addRezStyle.php">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+<div class="flex">
 <form method="POST">
-    <div class="flex">
+    
         <div class="box">
             <p>Data kur doni ta shikoni</p>
             <input type="date" name="data" id="dataZ" class="input" required>
@@ -71,8 +89,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <option value="Prizren">Prizren</option>
             </select>
         </div>
-    </div>
+    
     <input type="submit" value="Shikoni a ka vende te lira" onclick="validoInputRezervo()" name="rezervo" class="buton">
 </form>
-
+</div>
 <script src="../javascript/javascript.js"></script>
+</body>
+</html>

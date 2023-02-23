@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../../css/dashboardStyle.php">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600,700,900" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
 
@@ -21,7 +20,8 @@
     <h1>Admin Dashboard</h1>
     <br>
     <br>
-    <table border="1">
+    <h2>Perdoruesit</h2>
+    <table class="table" border="1">
         <tr>
             <th>ID</th>
             <th>Emri</th>
@@ -47,9 +47,9 @@
                <td>$perdoruesi[email]</td>
                <td>$perdoruesi[password]</td>
                <td>$perdoruesi[roli]</td>           
-               <td><a href='edit.php?id=$perdoruesi[id]'>Edit</a></td>
-               <td><a href='delete.php?id=$perdoruesi[id]'>Delete</a></td>
-               <td><a href='add.php?id=$perdoruesi[id]'>Add</a></td>
+               <td><a href='edit.php?id=$perdoruesi[id]'><i class='fa-solid fa-user-pen'></i></a></td>
+               <td><a href='delete.php?id=$perdoruesi[id]'><i class='fa-sharp fa-solid fa-trash'></a></td>
+               <td><a href='add.php?id=$perdoruesi[id]'><i class='fa-solid fa-user-plus'></a></td>
                </tr>
            ";
             }
@@ -58,9 +58,9 @@
     <br>
     <br>
     <div class="header">
-        <h1>Rezervimi</h1>
+        <h2>Rezervimi</h2>
     </div>
-    <table border="1">
+    <table  class="table" border="1">
         <tr>
             <th>ID</th>
             <th>Data</th>
@@ -86,9 +86,9 @@
                <td>$rezervimet[persona]</td>
                <td>$rezervimet[filmi]</td>
                <td>$rezervimet[qyteti]</td>
-               <td><a href='editRez.php?id=$rezervimet[id]'>Edit</a></td>
-               <td><a href='deleteRez.php?id=$rezervimet[id]'>Delete</a></td>
-               <td><a href='addRez.php?id=$rezervimet[id]'>Add</a></td>
+               <td><a href='editRez.php?id=$rezervimet[id]'><i class='fa-solid fa-pen-to-square'></a></td>
+               <td><a href='deleteRez.php?id=$rezervimet[id]'><i class='fa-sharp fa-solid fa-trash'></a></td>
+               <td><a href='addRez.php?id=$rezervimet[id]'><i class='fa-sharp fa-solid fa-calendar-days'></a></td>
            </tr>
            ";
             }
@@ -97,9 +97,9 @@
     <br>
     <br>
     <div class="header">
-        <h1>Filmat</h1>
+        <h2>Filmat</h2>
     </div>
-    <table border="1">
+    <table  class="table" border="1">
         <tr>
             <th>ID</th>
             <th>Emri</th>
@@ -121,9 +121,9 @@
                <td>$filmatmain[emri]</td>
                <td><img src='../../img/$filmatmain[cover]' height = 355px width = 240px > </td>
                <td>$filmatmain[detajet]</td> 
-               <td><a href='editFilmiMain.php?id=$filmatmain[id]'>Edit</a></td>
-               <td><a href='deleteFilmiMain.php?id=$filmatmain[id]'>Delete</a></td>
-               <td><a href='addFilmiMain.php?id=$filmatmain[id]'>Add</a></td>
+               <td><a href='editFilmiMain.php?id=$filmatmain[id]'><i class='fa-solid fa-pen-to-square'></a></td>
+               <td><a href='deleteFilmiMain.php?id=$filmatmain[id]'><i class='fa-sharp fa-solid fa-trash'></a></td>
+               <td><a href='addFilmiMain.php?id=$filmatmain[id]'><i class='fa-solid fa-plus'></i></a></td>
            </tr>
            ";
             }

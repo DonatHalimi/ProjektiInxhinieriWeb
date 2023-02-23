@@ -13,7 +13,7 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../css/signup.css">
+    <link rel="stylesheet" href="../../css/signupStyle.php">
 
     <title>Sign up</title>
 </head>

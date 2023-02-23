@@ -9,14 +9,33 @@ $filmi = $filmaRep->getFilmatMainById($filmiId);
 ?>
 
 
-<form action="" method="POST">
-    <input type="text" name="id" value="<?= $filmi['id'] ?>" readonly> <br><br>
-    <input type="text" name="emri" value="<?= $filmi['emri'] ?>"> <br><br>
-    <input type="text" name="cover" value="<?= $filmi['cover'] ?>"> <br><br>
-    <input type="text" name="detajet" value="<?= $filmi['detajet'] ?>"> <br><br>
-
-    <input type="submit" name="save" value="save"> <br><br>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/editStyle.php">
+</head>
+<body>
+    <div class="addA">
+        <form action="" method="POST">
+            <label>Id</label>
+            <input type="text" name="id" value="<?= $filmi['id'] ?>" readonly> <br><br>
+            <label>Emri</label>
+            <input type="text" name="emri" value="<?= $filmi['emri'] ?>"> <br><br>
+            <label>Cover</label>
+            <input type="text" name="cover" value="<?= $filmi['cover'] ?>"> <br><br>
+            <label>Detajet</label>
+            <input type="text" name="detajet" value="<?= $filmi['detajet'] ?>"> <br><br>
+        
+            <input id="button" type="submit" name="save" value="save"> <br><br>
+        </form>
+    </form>
+    </div>
+</body>
+</html>
 
 <?php
 
