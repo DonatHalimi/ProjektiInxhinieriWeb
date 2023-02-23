@@ -16,8 +16,8 @@ $filmi = $filmaRep->getFilmatMainById($filmiId);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../css/editStyle.php">
+    <title>Edit</title>
+    <link rel="stylesheet" href="../../css/editStyleFilmiMain.php">
 </head>
 
 <body>
@@ -32,7 +32,7 @@ $filmi = $filmaRep->getFilmatMainById($filmiId);
             <label>Detajet</label>
             <input type="text" name="detajet" value="<?= $filmi['detajet'] ?>"> <br><br>
 
-            <input id="button" type="submit" name="save" value="save"> <br><br>
+            <input id="button" type="submit" name="save" value="Ruaj"> <br><br>
         </form>
         </form>
     </div>

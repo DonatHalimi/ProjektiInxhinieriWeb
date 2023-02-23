@@ -35,7 +35,7 @@ $user = $userRep->getUserById($userId);
             <label>Roli</label>
             <input type="text" name="roli" value="<?= $user['roli'] ?>"> <br><br>
 
-            <input id="button" type="submit" name="save" value="save"> <br><br>
+            <input id="button" type="submit" name="save" value="Ruaj"> <br><br>
         </form>
     </div>
 </body>

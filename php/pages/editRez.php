@@ -12,10 +12,10 @@ $rezervimet = $rezRep->getRezervimetById($rezId);
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
     <link rel="stylesheet" href="../../css/addRezStyle.php">
-    <title>Document</title>
 </head>
 
 <body>
@@ -70,7 +70,7 @@ $rezervimet = $rezRep->getRezervimetById($rezId);
                 </select>
             </div>
 
-            <input type="submit" value="Ruaj" onclick="validoInputRezervo()" name="rezervo" class="buton">
+            <input class="buton" type="submit" onclick="validoInputRezervo()" name="rezervo" value="Ruaj">
         </form>
     </div>
 

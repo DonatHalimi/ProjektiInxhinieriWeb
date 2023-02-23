@@ -1,7 +1,6 @@
 <?php
 header('Content-type: text/css; charset:UTF-8');
 ?>
-
 body{
 background-color: beige;
 font-family: sans-serif;
@@ -9,7 +8,7 @@ font-family: sans-serif;
 
 .addA {
 width: 350px;
-height: 470px;
+height: 450px;
 margin: auto;
 background-color: rgb(27, 160, 60);
 border-radius: 3px;
@@ -25,13 +24,13 @@ padding-top: 15px;
 form {
 width: 300px;
 margin-left: 20px;
-padding-top: 10px;
+padding-top: 5px;
 }
 
 form label {
 display: flex;
 margin-top: 20px;
-font-size: 18px;
+font-size: 20px;
 }
 
 form input {
@@ -41,22 +40,6 @@ border-color: #ebf0fc;
 border-radius: 6px;
 outline: none;
 background-color: rgb(235, 240, 252);
-}
-
-.textarea-style {
-display: block;
-width: 100%;
-padding: .375rem .75rem;
-font-size: 1rem;
-line-height: 1.5;
-color: #495057;
-background-color: #fff;
-background-clip: padding-box;
-border: 1px solid #ced4da;
-border-radius: .25rem;
-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-height: auto;
-min-height: 120px;
 }
 
 #button {

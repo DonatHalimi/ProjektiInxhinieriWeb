@@ -3,11 +3,12 @@ header('Content-type: text/css; charset:UTF-8');
 ?>
 body{
 background-color: beige;
+font-family: sans-serif;
 }
 
 .addA {
 width: 350px;
-height: 590px;
+height: 480px;
 margin: auto;
 background-color: rgb(27, 160, 60);
 border-radius: 3px;
@@ -66,7 +67,11 @@ color: gray;
 }
 
 #button {
+height:35px;
+width: 100%;
 margin-top: 30px;
+background-color: rgb(52, 196, 148);
+border-color: rgb(27, 160, 60);
 }
 
 #parag1 {

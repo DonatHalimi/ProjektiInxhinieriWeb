@@ -3,44 +3,46 @@ header('Content-type: text/css; charset:UTF-8');
 ?>
 body{
 background-color: beige;
-font-family: sans-serif;
 }
 
-.flex {
+.addA {
 width: 350px;
-height: 520px;
+height: 630px;
 margin: auto;
 background-color: rgb(27, 160, 60);
+border-radius: 3px;
 margin: 150px auto;
 border-radius: 30px;
+}
+
+h1 {
+text-align: center;
+padding-top: 15px;
 }
 
 form {
 width: 300px;
 margin-left: 20px;
-padding-top: 10px;
+padding-top: 5px;
 }
 
-form p {
+form label {
 display: flex;
-margin-top: 10px;
-font-size: 18px;
+margin-top: 20px;
+font-size: 20px;
 }
 
-.input {
+form input {
 width: 100%;
-padding: 9px;
+padding: 7px;
 border-color: #ebf0fc;
-border-radius: 10px;
+border-radius: 6px;
+outline: none;
 background-color: rgb(235, 240, 252);
 }
 
-.buton {
-width: 100%;
-height: 34px;
-margin-top: 16px;
-outline: none;
-margin-left: 5px;
+#button {
+margin-top: 10px;
 background-color: rgb(52, 196, 148);
 border-color: rgb(27, 160, 60);
 }
