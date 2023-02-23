@@ -8,12 +8,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $cover = $_POST['cover'];
         $detajet = $_POST['detajet'];
 
-        header("Location:dashboard.php");
-
         $filmat = new FilmatHome($emri, $cover, $detajet);
-        $filmatHome = new filmaRep();
+        $filmaRep = new filmaRep();
 
-        $filmatHome->insertoFilmin($filmat);
+        $filmaRep->insertoFilmin($filmat);
+        header("Location:dashboard.php");
+        exit();
         }
     }
 ?>
@@ -36,14 +36,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-
-
     <div class="addF">
         <form action="" method="POST">
             <label><b>Emri</b></label>
             <input id="emri" name="emri" type="text" placeholder="Shkruani emrin e filmit" class="form-control"
                 required>
-            <br>
             <label><b>Inserto Cover</b></label>
             <input id="cover" name="cover" type="file" class="form-control" required>
             <br>
@@ -51,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input id="detajet" name="detajet" type="text" placeholder="Shkruani detajet e filmit"
                 class="form-control textarea-style" required>
 
-            <input type="submit" id="button" name="save" class="btn btn-primary deep-purple btn-block" value="Shto">
+            <input type="submit" id="button" name="save" class="btn btn-primary deep-purple btn-block" value="save">
         </form>
     </div>
 

@@ -35,11 +35,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-
     <div class="flex">
         <form method="POST">
             <div class="box">
