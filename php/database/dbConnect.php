@@ -16,7 +16,7 @@ class dbConnection
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conn;
             } catch (PDOException $e) {
-            echo "Nuk mund te lidhej me databazen" . $e->getMessage();
+            echo "Nuk mund te lidhej me databazen " . $e->getMessage();
             return null;
             }
         }

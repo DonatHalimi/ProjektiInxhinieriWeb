@@ -100,6 +100,5 @@ class userRep
         $statement->execute([$id]);
         echo "<script> alert('User eshte fshire me sukses!') </script>";
         }
-
     }
 ?>
