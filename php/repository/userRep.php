@@ -36,6 +36,7 @@ class userRep
     function readPerdoruesi($loginPerdoruesi)
         {
         $databaseConnection = $this->connection;
+
         $email = $loginPerdoruesi->getLoginPerdoruesiEmail();
         $password = $loginPerdoruesi->getLoginPerdoruesiPassword();
 

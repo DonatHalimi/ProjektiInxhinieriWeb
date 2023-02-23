@@ -15,7 +15,6 @@ class RegisterPerdoruesi
         $this->Password = $Password;
         }
 
-
     function getRegisterPerdoruesiEmri()
         {
         return $this->Emri;

@@ -28,7 +28,7 @@ $filmi = $filmaRep->getFilmatMainById($filmiId);
             <label>Emri</label>
             <input type="text" name="emri" value="<?= $filmi['emri'] ?>"> <br><br>
             <label>Cover</label>
-            <input type="text" name="cover" value="<?= $filmi['cover'] ?>"> <br><br>
+            <input type="file" name="cover" value="<?= $filmi['cover'] ?>"> <br><br>
             <label>Detajet</label>
             <input type="text" name="detajet" value="<?= $filmi['detajet'] ?>"> <br><br>
 
