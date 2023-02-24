@@ -19,11 +19,12 @@ class filmaRep
         $emri = $filmatmain->getFilmatHomeEmri();
         $cover = $filmatmain->getFilmatHomeCover();
         $detajet = $filmatmain->getFilmatHomeDetajet();
+        $source = $filmatmain->getFilmatHomeSource();
 
-        $sql = "INSERT INTO filmatmain (emri,cover,detajet) VALUES (?,?,?)";
+        $sql = "INSERT INTO filmatmain (emri,cover,detajet,source) VALUES (?,?,?,?)";
 
         $statement = $conn->prepare($sql);
-        $statement->execute([$emri, $cover, $detajet]);
+        $statement->execute([$emri, $cover, $detajet, $source]);
         echo "<script> alert('Filmi eshte insertuar me sukses!') </script>";
         }
     function getAllFilmatMain()
@@ -47,16 +48,16 @@ class filmaRep
         return $film;
         }
 
-    function perditesoFilmin($id, $emri, $cover, $detajet)
+    function perditesoFilmin($id, $emri, $cover, $detajet, $source)
         {
         $conn = $this->connect;
 
-        $sql = "UPDATE filmatmain SET emri=?,cover=?,detajet=? where id=?";
+        $sql = "UPDATE filmatmain SET emri=?,cover=?,detajet=?,source=?where id=?";
 
         $statement = $conn->prepare($sql);
 
 
-        $statement->execute([$emri, $cover, $detajet, $id]);
+        $statement->execute([$emri, $cover, $detajet, $source, $id]);
         echo "<script> alert('Filmi eshte perditesuar me sukses!') </script>";
         }
     function deleteFilminById($id)

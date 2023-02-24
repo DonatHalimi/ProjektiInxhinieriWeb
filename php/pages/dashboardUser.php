@@ -17,7 +17,7 @@
 <body>
 <h1>User Dashboard</h1>
     <h2>Filmat e rezervuar</h2>
-    <table  class="table" border="1">
+    <table  class="table">
         <tr>
             <th>ID</th>
             <th>Data</th>

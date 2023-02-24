@@ -6,9 +6,9 @@ background-color: beige;
 font-family: sans-serif;
 }
 
-.addF {
+.addA {
 width: 350px;
-height: 400px;
+height: 625px;
 margin: auto;
 background-color: rgb(27, 160, 60);
 border-radius: 3px;

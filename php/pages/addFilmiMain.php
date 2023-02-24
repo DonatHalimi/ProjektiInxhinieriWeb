@@ -7,8 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $emri = $_POST['emri'];
         $cover = $_POST['cover'];
         $detajet = $_POST['detajet'];
+        $source = $_POST['source'];
 
-        $filmat = new FilmatHome($emri, $cover, $detajet);
+        $filmat = new FilmatHome($emri, $cover, $detajet, $source);
         $filmaRep = new filmaRep();
 
         $filmaRep->insertoFilmin($filmat);
@@ -40,6 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label><b>Detajet</b></label>
             <input id="detajet" name="detajet" type="text" placeholder="Shkruani detajet e filmit"
                 class="form-control textarea-style" required>
+            <label><b>Source</b></label>
+            <input id="source" name="source" type="text" placeholder="Shkruani source" class="form-control">
 
             <input type="submit" id="button" class="btn btn-primary deep-purple btn-block" name="save" value="Ruaj">
         </form>

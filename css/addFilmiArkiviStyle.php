@@ -8,7 +8,7 @@ font-family: sans-serif;
 
 .addF {
 width: 350px;
-height: 250px;
+height: 330px;
 margin: auto;
 background-color: rgb(27, 160, 60);
 border-radius: 3px;

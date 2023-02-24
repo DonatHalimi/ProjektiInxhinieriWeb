@@ -122,6 +122,7 @@
                <td>$filmatmain[emri]</td>
                <td><img src='../../img/$filmatmain[cover]' height = 355px width = 240px > </td>
                <td>$filmatmain[detajet]</td> 
+               <td>$filmatmain[source]</td>
                <td><a href='editFilmiMain.php?id=$filmatmain[id]'><i class='fa-solid fa-pen-to-square'></a></td>
                <td><a href='deleteFilmiMain.php?id=$filmatmain[id]'><i class='fa-sharp fa-solid fa-trash'></a></td>
                <td><a href='addFilmiMain.php?id=$filmatmain[id]'><i class='fa-solid fa-plus'></i></a></td>

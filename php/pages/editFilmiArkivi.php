@@ -32,7 +32,7 @@ $filmi = $filmaArkiviRep->getFilmatArkiviById($filmiId);
             <label>Source</label>
             <input type="text" name="source" value="<?= $filmi['source'] ?>"> <br><br>
 
-            <input id="button" type="submit" name="save" value="save"> <br><br>
+            <input id="button" type="submit" name="save" value="Ruaj"> <br><br>
         </form>
         </form>
     </div>

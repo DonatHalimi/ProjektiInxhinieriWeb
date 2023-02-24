@@ -30,7 +30,10 @@ $filmi = $filmaRep->getFilmatMainById($filmiId);
             <label>Cover</label>
             <input type="file" name="cover" value="<?= $filmi['cover'] ?>"> <br><br>
             <label>Detajet</label>
-            <input type="text" name="detajet" value="<?= $filmi['detajet'] ?>"> <br><br>
+            <input id="detajet" name="detajet" value="<?= $filmi['detajet'] ?>" type="text"
+                placeholder="Shkruani detajet e filmit" class="form-control textarea-style" required>
+            <label>Source</label>
+            <input type="text" name="source" value="<?= $filmi['source'] ?>"> <br><br>
 
             <input id="button" type="submit" name="save" value="Ruaj"> <br><br>
         </form>
@@ -47,8 +50,9 @@ if (isset($_POST['save'])) {
     $emri = $_POST['emri'];
     $cover = $_POST['cover'];
     $detajet = $_POST['detajet'];
+    $source = $_POST['source'];
 
-    $filmaRep->perditesoFilmin($id, $emri, $cover, $detajet);
+    $filmaRep->perditesoFilmin($id, $emri, $cover, $detajet, $source);
     header("Location:dashboard.php");
     }
 ?>
