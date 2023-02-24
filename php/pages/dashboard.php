@@ -139,6 +139,7 @@
             <th>ID</th>
             <th>Emri</th>
             <th>Cover</th>
+            <th>Source</th>
             <th>Edit</th>
             <th>Delete</th>
             <th><a href='addFilmiArkivi.php?id=$filmatarkivi[id]'>Add</a></th>
@@ -154,6 +155,7 @@
                <td>$filmatarkivi[id]</td>
                <td>$filmatarkivi[emri]</td>
                <td><img src='../../img/$filmatarkivi[cover]' height = 355px width = 240px > </td>
+               <td>$filmatarkivi[source]</td>
                <td><a href='editFilmiArkivi.php?id=$filmatarkivi[id]'><i class='fa-solid fa-pen-to-square'></a></td>
                <td><a href='deleteFilmiArkivi.php?id=$filmatarkivi[id]'><i class='fa-sharp fa-solid fa-trash'></a></td>
                <td><a href='addFilmiArkivi.php?id=$filmatarkivi[id]'><i class='fa-solid fa-plus'></i></a></td>

@@ -6,8 +6,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['save'])) {
         $emri = $_POST['emri'];
         $cover = $_POST['cover'];
+        $source = $_POST['source'];
 
-        $filmat = new FilmatArkivi($emri, $cover);
+        $filmat = new FilmatArkivi($emri, $cover,$source);
         $filmaArkiviRep = new filmaArkiviRep();
 
         $filmaArkiviRep->insertoFilminArkivi($filmat);

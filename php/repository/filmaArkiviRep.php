@@ -18,11 +18,12 @@ class filmaArkiviRep
 
         $emri = $filmatarkivi->getFilmatArkiviEmri();
         $cover = $filmatarkivi->getFilmatArkiviCover();
+        $source = $filmatarkivi->getFilmatArkiviSource();
 
-        $sql = "INSERT INTO filmatarkivi (emri,cover) VALUES (?,?)";
+        $sql = "INSERT INTO filmatarkivi (emri,cover,source) VALUES (?,?,?)";
 
         $statement = $conn->prepare($sql);
-        $statement->execute([$emri, $cover]);
+        $statement->execute([$emri, $cover, $source]);
         echo "<script> alert('Filmi {$emri} eshte insertuar me sukses!') </script>";
         }
     function getAllFilmatArkivi()
@@ -46,16 +47,16 @@ class filmaArkiviRep
         return $film;
         }
 
-    function perditesoFilminArkivi($id, $emri, $cover)
+    function perditesoFilminArkivi($id, $emri, $cover, $source)
         {
         $conn = $this->connect;
 
-        $sql = "UPDATE filmatarkivi SET emri=?,cover=? where id=?";
+        $sql = "UPDATE filmatarkivi SET emri=?,cover=?,source=? where id=?";
 
         $statement = $conn->prepare($sql);
 
 
-        $statement->execute([$emri, $cover, $id]);
+        $statement->execute([$emri, $cover, $source, $id]);
         echo "<script> alert('Filmi eshte perditesuar me sukses!') </script>";
         }
     function deleteFilminArkiviById($id)

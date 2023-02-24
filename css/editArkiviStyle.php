@@ -7,7 +7,7 @@ background-color: beige;
 
 .addA {
 width: 350px;
-height: 630px;
+height: 460px;
 margin: auto;
 background-color: rgb(27, 160, 60);
 border-radius: 3px;

@@ -29,6 +29,8 @@ $filmi = $filmaArkiviRep->getFilmatArkiviById($filmiId);
             <input type="text" name="emri" value="<?= $filmi['emri'] ?>"> <br><br>
             <label>Cover</label>
             <input type="file" name="cover" value="<?= $filmi['cover'] ?>"> <br><br>
+            <label>Source</label>
+            <input type="text" name="source" value="<?= $filmi['source'] ?>"> <br><br>
 
             <input id="button" type="submit" name="save" value="save"> <br><br>
         </form>
@@ -44,8 +46,9 @@ if (isset($_POST['save'])) {
     $id = $filmiId;
     $emri = $_POST['emri'];
     $cover = $_POST['cover'];
+    $source = $_POST['source'];
 
-    $filmaArkiviRep->perditesoFilminArkivi($id, $emri, $cover);
+    $filmaArkiviRep->perditesoFilminArkivi($id, $emri, $cover, $source);
     header("Location:dashboard.php");
     }
 ?>
