@@ -101,5 +101,15 @@ class userRep
         $statement->execute([$id]);
         echo "<script> alert('User eshte fshire me sukses!') </script>";
         }
+        function getRezervimetById($id)
+        {
+        $conn = $this->connection;
+
+        $sql = "SELECT * FROM rezervimet WHERE id='$id'";
+        $statement = $conn->query($sql);
+        $rezervimet = $statement->fetchAll();
+        return $rezervimet;
+        }
     }
+    
 ?>

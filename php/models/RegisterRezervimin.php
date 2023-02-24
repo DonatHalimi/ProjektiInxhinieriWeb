@@ -2,6 +2,7 @@
 
 class RegisterRezervimin
     {
+ 
     private $Data;
     private $Orari;
     private $Persona;
@@ -10,6 +11,7 @@ class RegisterRezervimin
 
     function __construct($Data, $Orari, $Persona, $Filmi, $Qyteti)
         {
+        
         $this->Data = $Data;
         $this->Orari = $Orari;
         $this->Persona = $Persona;
@@ -17,6 +19,7 @@ class RegisterRezervimin
         $this->Qyteti = $Qyteti;
         }
 
+        
     function getRezervimiData()
         {
         return $this->Data;

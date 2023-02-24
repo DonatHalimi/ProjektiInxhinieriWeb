@@ -1,10 +1,10 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Kinemaja</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
@@ -15,17 +15,38 @@ session_start();
     <script src="https://kit.fontawesome.com/7283136402.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="login.php">
     <link rel="stylesheet" href="signup.php">
-    <link rel="stylesheet" href="../../css/rezervimiStyle.php">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/indexStyle.php">
 </head>
+
 <body>
-<div class="slider-container">
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="index.php"><img id="logo" src="../../img/cinema-paradiso.jpg" alt=""></a>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="index.php" class="linku">Home</a></li>
+                    <li class="menu-list-item"><a href="detajet.php" class="linku">Filmat</a></li>
+                    <li class="menu-list-item"><a href="arkivi.php" class="linku">Arkivi</a></li>
+                    <li class="menu-list-item"><a href="rrethnesh.php" class="linku">Rreth Nesh</a></li>
+                    <li class="menu-list-item"><a href="index.php#footer" class="linku">Contact</a></li>
+                    <li><a href="login.php" class="linku" id="login-a">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="head2">Tani ne kinema</h2>
+
+    <div class="slider-container">
         <button id="prevBtn"></button>
         <img src="" id="foto">
         <button id="nextBtn"></button>
     </div>
+    </div>
 
-<section class="reservation" id="reservation">
+    <section class="reservation" id="reservation">
         <form action="" method="POST">
             <h3>Rezervoni</h3>
             <div class="flex">
@@ -82,6 +103,7 @@ session_start();
         </form>
         <?php include_once '../controller/rezCont.php'; ?>
     </section>
+
     <footer id="footer">
         <div class="contact-section">
             <h3 id="kontakt">Contact</h3>
@@ -130,6 +152,6 @@ session_start();
     </a>
 
     <script src="../../javascript/javascript.js"></script>
-    
 </body>
+
 </html>

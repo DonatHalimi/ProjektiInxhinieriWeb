@@ -4,7 +4,7 @@ include_once '../models/RegisterRezervimin.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['rezervo'])) {
-        header("Location:dashboardUser.php");
+       
 
         $data = $_POST['data'];
         $orari = $_POST['orari'];

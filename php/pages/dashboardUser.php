@@ -30,15 +30,15 @@
             <th>Add</th>
         </tr>
         <?php
+        include_once '../repository/userRep.php';
         include_once '../repository/rezRep.php';
+        $userRep = new userRep();
         $rezRep = new rezRep();
-        $rezId = $_GET['id'];
-        $rezervo = $rezRep->getRezervimetById($rezId);
-        if ($rezervo) {
-            foreach ($rezervo as $rezervimet) {
-                
-            
-        
+
+        $userId = $_SESSION['id'];
+        $reservations = $rezRep->getReservationsByUserId($userId);
+        if ($reservations) {
+            foreach ($reservations as $reservation){
             echo
                 "
             <tr>
@@ -59,6 +59,8 @@
         }
         ?>
     </table>
+ 
+
 </body>
 
 </html>

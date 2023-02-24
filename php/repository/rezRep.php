@@ -26,7 +26,7 @@ class rezRep
 
         $statement = $conn->prepare($sql);
         $statement->execute([$data, $orari, $persona, $filmi, $qyteti]);
-        echo "<script> alert('Rezervimi eshte insertuar me sukses!') </script>";
+        
         }
     function getAllRezervimet()
         {
@@ -71,5 +71,28 @@ class rezRep
         $statement->execute([$id]);
         echo "<script> alert('Rezervimi eshte fshire me sukses!') </script>";
         }
+        public function getReservationsByUserId($userId)
+{
+    $conn = $this->connect;
+
+    $sql = "SELECT * FROM rezervimet WHERE id = $userId";
+    $statement = $conn->prepare($sql);
+    $statement->execute(['id' => $userId]);
+
+    $reservations = [];
+    while ($row = $statement->fetch()) {
+        $reservation = [
+            'id' => $row['id'],
+            'data' => $row['data'],
+            'orari' => $row['orari'],
+            'persona' => $row['persona'],
+            'filmi' => $row['filmi'],
+            'qyteti' => $row['qyteti']
+        ];
+        $reservations[] = $reservation;
+    }
+
+    return $reservations;
+}
     }
 ?>

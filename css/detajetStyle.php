@@ -99,6 +99,7 @@ body {
   font-family: "Sen", sans-serif;
   max-width: 60%;
   text-align: justify;
+  margin-bottom:11%
 }
 
    
