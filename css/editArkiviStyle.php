@@ -41,6 +41,21 @@ outline: none;
 background-color: rgb(235, 240, 252);
 }
 
+input[type=file]::file-selector-button {
+margin-right: 20px;
+border: none;
+background: rgb(27, 160, 60);
+padding: 10px 20px;
+border-radius: 10px;
+color: #fff;
+cursor: pointer;
+transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+background: rgb(52, 196, 148);
+}
+
 #button {
 margin-top: 10px;
 background-color: rgb(52, 196, 148);

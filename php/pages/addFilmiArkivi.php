@@ -35,6 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 required>
             <label><b>Inserto Cover</b></label>
             <input id="cover" name="cover" type="file" class="form-control" required>
+            <label><b>Inserto source</b></label>
+            <input id="source" name="source" type="text" class="form-control" required>
             <input type="submit" id="button" name="save" class="btn btn-primary deep-purple btn-block" value="Ruaj">
         </form>
     </div>

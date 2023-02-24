@@ -105,6 +105,7 @@
             <th>Emri</th>
             <th>Cover</th>
             <th>Detajet</th>
+            <th>Source</th>
             <th>Edit</th>
             <th>Delete</th>
             <th><a href='addFilmiMain.php?id=$filmatmain[id]'>Add</a></th>
