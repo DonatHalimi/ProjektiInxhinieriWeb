@@ -45,15 +45,8 @@
         <button id="nextBtn"></button>
     </div>
     </div>
-    <br>
-    <br>
-    <br>
-    
-    <h2 style="text-align:center">Duhet te beni log-in para se te mundeni me rezervu!</h2>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    <h2 id="mesazh">Ju duhet te beni log-in në mënyrë që të mund të rezervoni një biletë!</h2>
 
     <footer id="footer">
         <div class="contact-section">

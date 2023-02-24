@@ -47,13 +47,13 @@
                 <label><b>Password</b></label>
                 <input type="password" class="form-control" id="password" placeholder="Shkruani fjalekalimin"
                     name="password" required>
-
+                <br>
                 <button type="submit" id="button" name="login" class="btn btn-primary deep-purple btn-block "
                     onclick="validoInput()">Dergo</button>
             </form>
             <?php include_once '../controller/loginCont.php'; ?>
 
-            <p><b>Nuk keni llogari?</b><a href="signup.php"> Regjistrohu</a></p>
+            <p id="parag1">Nuk keni llogari?</b><a href="signup.php"> Regjistrohu</a></p>
 
         </div>
     </div>
