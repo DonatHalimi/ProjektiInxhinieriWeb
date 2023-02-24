@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($user["roli"] == 1) {
                 header("Location: dashboard.php");
                 } else {
-                header("Location: index.php");
+                header("Location: rezervimi.php");
                 }
             }
         // else

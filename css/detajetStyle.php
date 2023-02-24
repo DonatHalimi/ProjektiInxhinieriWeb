@@ -76,65 +76,32 @@ body {
         padding-left: 617px;
     }
 
-    .movie-list-item-photo {
-        position: sticky;
-        margin-top: 20px;
-        left: 20px;
-        height: 400px;
-        border-radius: 15px;
-    }
-
     .movie-list {
-        display: flex;
-        flex-direction: row;
-        padding-left: 15px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    #movie-description-batman {
-        font-family: "Sen", sans-serif;
-        position: absolute;
-        top: 110px;
-        left: 290px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
-    }
+.movie-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-    #movie-description-black-adam {
-        font-family: "Sen", sans-serif;
-        padding-top: 20px;
-        left: 300px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
-    }
+.movie-list-item-photo {
+  height: 400px;
+  width: 300px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
 
-    #movie-description-nope {
-        font-family: "Sen", sans-serif;
-        padding-top: 20px;
-        left: 300px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
-    }
+.movie-description {
+  font-family: "Sen", sans-serif;
+  max-width: 60%;
+  text-align: justify;
+}
 
-    #movie-description-wakanda-forever {
-        font-family: "Sen", sans-serif;
-        padding-top: 20px;
-        left: 500px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
-    }
-
-    #movie-description-thor {
-        font-family: "Sen", sans-serif;
-        padding-top: 20px;
-        left: 300px;
-        max-width: 83%;
-        text-align: justify;
-        margin-left: 20px;
-    }
+   
 }
 
 html {

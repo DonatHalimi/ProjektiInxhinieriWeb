@@ -33,8 +33,12 @@
         include_once '../repository/rezRep.php';
         $rezRep = new rezRep();
         $rezId = $_GET['id'];
-        $rez = $rezRep->getRezervimetById($rezId);
-        foreach ($rez as $rezervimet) {
+        $rezervo = $rezRep->getRezervimetById($rezId);
+        if ($rezervo) {
+            foreach ($rezervo as $rezervimet) {
+                
+            
+        
             echo
                 "
             <tr>
@@ -50,6 +54,9 @@
             </tr>
             ";
             }
+        } else {
+            echo "No reservation found with the specified ID.";
+        }
         ?>
     </table>
 </body>
