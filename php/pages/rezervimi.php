@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <h2 id="head2">Tani ne kinema</h2>
+
 
     <?php include 'slider.php'; ?>
     <div class="slider-container">
