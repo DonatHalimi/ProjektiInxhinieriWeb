@@ -14,27 +14,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($user && $user["email"] == $email && $user["password"] == $password) {
             if ($user["roli"] == 1) {
                 header("Location: dashboard.php");
-                } else {
+
+                } else if ($user["roli"] == 2) {
                 header("Location: rezervimi.php");
+
+                } else {
+                echo "<script>alert('Ky email nuk ekziston!');</script>";
                 }
+            } else {
+            echo "<script>alert('Duhet te regjistroheni per te mundur te kyqeni!');</script>";
+            header("Location: signup.php");
             }
-        // else
-        // {
-        //     $alert = "<script>alert('Invalid email and password!');</script>";
-        //     echo $alert;
-        //     echo "<script>
-        //     if ( window.history.replaceState ) {
-        //         window.history.replaceState( null, null, window.location.href = 'login.php' );
-        //     }
-        // </script>";
-
-        // }
         }
+
     }
-
-
-
-
-
-
 ?>
