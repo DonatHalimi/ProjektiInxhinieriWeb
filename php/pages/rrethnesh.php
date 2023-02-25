@@ -38,56 +38,31 @@
     </div>
 
 
-    <div class="rreth-nesh">
-        <h1>Kinemaja Paradiso</h1>
-        <br>
-        <br>
-        <h4>Historiku dhe informacione</h4>
-        <div class="historiku">
-            <span class="rrethnesh">
-                <p class="teksti">Kinemaja Paradiso është ekspozuesi më i madh i kinemasë në Kosove dhe një
-                    degë tërësisht në pronësi të PPB Group Berhad, i cili është ekspozues dhe distributor i filmave
-                    dhe
-                    përmbajtjeve në Kosove. Ajo
-                    operon mbi 40 ekrane në 4 vendndodhje në të gjithë Kosoven."</p>
-                <p class="teksti">Kinemaja Paradiso funksionon që nga 12 dhjetori i vitit 2000. Qe nga ajo kohë e
-                    deri me sot kjo
-                    kinema ka sherbyer si urë lclasshëse e Kosovës
-                    me botën e filmit, duke ndikuar kështu jo vetëm ne zhvillimin e Artit të shtatë kinematografik,
-                    por
-                    edhe në zhvillimin e kulturës
-                    në përgjithësi në Kosovë.</p>
-                <p class="teksti">Tek Kinema Paradiso shfaqen filma premierë në bashkëpunim me kompanitë më të
-                    njohura holivudiane,
-                    organizohen punëtori profesionale, javë dhe festivale te filmit në bashkëpunim me të gjitha
-                    institucionet
-                    vendore dhe nderkombëtare, si dhe organizohen shumë aktivitete të shumta kinematografike,
-                    gjithnjë
-                    duke ofruar për shikuesit dhe krijuesit e artit kinematografik vlerat me të larta
-                    kinematografike
-                    evropiane dhe botërore, përmes se cilave publiku ynë është me afër njohjes se kulturave te
-                    këtyre
-                    vendeve.</p>
-                <p class="teksti">Kinemaja Paradiso sot ka një llojllojshmëri tematikash të përzgjedhura të filmave:
-                    për më të
-                    vegjlit,
-                    për fëmijët që krijojnë kulturën e shijimit të artit filmik por edhe për të gjtihë ata që e duan
-                    filmin dhe që duan të jenë pjesë e pandashme e botës se artit. Kemi ndërtuar lclasshje me shumë
-                    distributorë nga rajoni, për ta sjellë filmin në kohë dhe pa
-                    pengesa,
-                    kurdo që ai të shfaqet në cilëndo kinema të botës,
-                    për ta përmbushur kërkesën, nevojën e dëshirën e secilit prej adhurues te filmit.</p>
+    
+     
+        <?php
+    require_once('../database/dbConnect.php');
 
-                <p class="teksti">Do të vazhdojmë të funksionojmë mbi parimin e promovimit të vlerave
-                    kinematografike dhe
-                    premierave të
-                    fundit botërore,
-                    gjithnjë në përmbushjen e nevojave dhe kërkesave të shikuesve tanë.Do të vazhdojmë të jemi në
-                    shërbim të të gjithë qytetarëve
-                    dhe te gjithë atyre që duan të jenë më afër artit filmik.</p>
-            </span>
-            <p><b>Behuni pjesë e Kinemasë, sepse ajo ka për te ju thënë gjithmonë diçka më shumë!</b></p>
-        </div>
+    $db = new dbConnection();
+    $conn = $db->startConnection();
+
+    $sql = "SELECT teksti FROM rrethnesh";
+    $result = $conn->query($sql);
+
+    echo '<div class="rreth-nesh">';
+    echo '<h1>Kinemaja Paradiso</h1>';
+    echo '<br>';
+    echo '<br>';
+    echo '<h4>Historiku dhe informacione</h4>';
+    echo '<div class="historiku">';
+    foreach ($result as $row) {
+        echo '<span class="rrethnesh">';
+        echo '<p class="teksti">' . $row['teksti'] . '</p>';
+        echo '</span>';
+    }
+    echo '</div>';
+    echo '</div>';
+?>
 
         <a href="#" class="to-top">
             <i class="fas fa-chevron-up"></i>

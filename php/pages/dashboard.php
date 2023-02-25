@@ -133,6 +133,39 @@
         <br>
         <br>
     </table>
+    <br>
+    <br>
+    <div class="header">
+        <h2>Rreth nesh</h2>
+    </div>
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Teksti</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th><a href='addRrethNeshTekst.php?id=$tesktiRrethnesh[id]'>Add</a></th>
+        </tr>
+        <?php
+        include_once '../repository/rrethNeshRep.php';
+        $rrethNeshRep = new rrethNeshRep();
+        $teksti = $rrethNeshRep->getAllTekstiRrethNesh();
+        foreach ($teksti as $tesktiRrethnesh) {
+            echo
+                "
+           <tr>
+               <td>$tesktiRrethnesh[id]</td>
+               <td>$tesktiRrethnesh[teksti]</td>
+               <td><a href='editRrethNesh.php?id=$tesktiRrethnesh[id]'><i class='fa-solid fa-pen-to-square'></a></td>
+               <td><a href='deleteTekstiRr.php?id=$tesktiRrethnesh[id]'><i class='fa-sharp fa-solid fa-trash'></a></td>
+               <td><a href='addRrethNeshTekst.php?id=$tesktiRrethnesh[id]'><i class='fa-solid fa-plus'></i></a></td>
+           </tr>
+           ";
+            }
+        ?>
+        <br>
+        <br>
+    </table>
     <div class="header">
         <h2>Arkivi</h2>
     </div>
