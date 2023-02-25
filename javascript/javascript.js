@@ -20,9 +20,6 @@ function validoInput() {
 
     } if (!regexPassword.test(passUserit)) {
         alert("Password eshte shkruar gabim!\n\nPassword duhet te jete i gjate minimum 7 karaktere!\nPasswordi duhet te filloj me shkronje te madhe!\nPasswordi duhet te mbaroje me ndonje numer apo shenje");
-
-    } else if (regexEmail.test(emailUserit) && regexPassword.test(passUserit)) {
-        alert("Jeni kyqur me sukses!");
     }
 }
 
@@ -122,10 +119,7 @@ window.addEventListener("scroll", () => {
     }
 })
 
-
-
-
-document.getElementById("prevBtn").addEventListener("click", function(){
+document.getElementById("prevBtn").addEventListener("click", function () {
     index--;
     if (index < 0) {
         index = varguIFotove.length - 1;
@@ -133,7 +127,7 @@ document.getElementById("prevBtn").addEventListener("click", function(){
     document.getElementById('foto').src = varguIFotove[index];
 });
 
-document.getElementById("nextBtn").addEventListener("click", function(){
+document.getElementById("nextBtn").addEventListener("click", function () {
     index++;
     if (index == varguIFotove.length) {
         index = 0;
