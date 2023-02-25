@@ -39,9 +39,10 @@
 
     <h2 id="head2">Tani ne kinema</h2>
 
+    <?php include 'slider.php'; ?>
     <div class="slider-container">
         <button id="prevBtn"></button>
-        <img src="" id="foto">
+         <img src="<?php echo $varguIFotove[0]; ?>" id="foto">
         <button id="nextBtn"></button>
     </div>
     </div>

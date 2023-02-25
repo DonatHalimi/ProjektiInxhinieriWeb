@@ -122,22 +122,8 @@ window.addEventListener("scroll", () => {
     }
 })
 
-var varguIFotove = ['../../img/batman-2022.jpg', '../../img/black-adam-2022.jpg', '../../img/nope-2022.jpg', '../../img/wakanda-forever-2022.jpg', '../../img/thor-2022.jpg'];
 
-var index = 0;
-const koha = 5000;
 
-function krijoSlider() {
-    
-    document.getElementById('foto').src = varguIFotove[index];
-    index++;
-    if (index == varguIFotove.length) {
-        index = 0;
-    }
-    setTimeout(krijoSlider, koha);
-}
-
-krijoSlider();
 
 document.getElementById("prevBtn").addEventListener("click", function(){
     index--;

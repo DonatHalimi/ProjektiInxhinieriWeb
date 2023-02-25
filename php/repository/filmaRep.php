@@ -70,5 +70,7 @@ class filmaRep
         $statement->execute([$id]);
         echo "<script> alert('Filmi eshte fshire me sukses!') </script>";
         }
+
+        
     }
 ?>
