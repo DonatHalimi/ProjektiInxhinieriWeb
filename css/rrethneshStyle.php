@@ -98,9 +98,11 @@ text-align: justify;
 margin-left: 10px;
 }
 
-    .teksti {
-        width: 95%;
-    }
+.teksti {
+width: 98%;
+line-height: 1.6;
+margin-left: 10px;
+}
 
 .rrethnesh {
 font-family: "Sen", sans-serif;
