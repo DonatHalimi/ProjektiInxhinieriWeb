@@ -96,7 +96,7 @@ body {
     }
 
     .teksti {
-        width: 95%;
+        width: 100%;
     }
 
     .rrethnesh {
