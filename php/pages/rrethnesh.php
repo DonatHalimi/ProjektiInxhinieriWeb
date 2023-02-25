@@ -38,9 +38,9 @@
     </div>
 
 
-    
-     
-        <?php
+
+
+    <?php
     require_once('../database/dbConnect.php');
 
     $db = new dbConnection();
@@ -50,25 +50,25 @@
     $result = $conn->query($sql);
 
     echo '<div class="rreth-nesh">';
-    echo '<h1>Kinemaja Paradiso</h1>';
+    echo '<h1 class= "kino">Kinemaja Paradiso</h1>';
     echo '<br>';
     echo '<br>';
-    echo '<h4>Historiku dhe informacione</h4>';
+    echo '<h4 class= "kino">Historiku dhe informacione</h4>';
     echo '<div class="historiku">';
     foreach ($result as $row) {
         echo '<span class="rrethnesh">';
         echo '<p class="teksti">' . $row['teksti'] . '</p>';
         echo '</span>';
-    }
+        }
     echo '</div>';
     echo '</div>';
-?>
+    ?>
 
-        <a href="#" class="to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
 
-        <script src="../../javascript/javascript.js"></script>
+    <script src="../../javascript/javascript.js"></script>
 </body>
 
 </html>

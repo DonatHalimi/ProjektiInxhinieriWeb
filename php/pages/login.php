@@ -53,7 +53,7 @@
             </form>
             <?php include_once '../controller/loginCont.php'; ?>
 
-            <p id="parag1">Nuk keni llogari?</b><a href="signup.php"> Regjistrohu</a></p>
+            <p id="parag1"><b>Nuk keni llogari?</b><a href="signup.php"> Regjistrohu</a></p>
 
         </div>
     </div>
